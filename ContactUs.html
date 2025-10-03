@@ -1,0 +1,611 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <link rel="stylesheet" href="bootstrap.min.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" />
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap" rel="stylesheet">
+
+
+<title>Contact - SABEQ</title>
+<meta name="description" content="Get in touch with SABEQ today. Contact us for marketing solutions, partnerships, and tailored plans to grow your business.">
+
+<!-- Favicon -->
+<link rel="icon" href="Images/LogoMarkPNG.png" type="image/png" />
+
+<style>
+    /* زر اللغة */
+    .lang-btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 90px;
+      height: 55px;
+      border: 1px solid #FAAF4380;
+      background: #FFFFFF;
+      border-radius: 80px;
+      font-family: 'Ubuntu', sans-serif;
+      font-weight: 700;
+      font-size: 14px;
+      line-height: 100%;
+      color: #282C4B;
+      text-decoration: none;
+      transition: all 0.3s ease;
+    }
+
+    .lang-btn:hover,
+    .lang-btn:focus {
+      background: #FAAF43;
+      color: #fff;
+    }
+
+    /* navbar */
+    .navbar {
+      transition: all 0.3s ease;
+      padding: 20px 0;
+    }
+
+    .navbar.shrink {
+      padding: 5px 0;
+    }
+
+    .navbar img {
+      transition: all 0.3s ease;
+    }
+
+    .navbar.shrink img {
+      width: 100px !important;
+      height: 60px !important;
+      transition: all 0.3s ease;
+    }
+    
+    /* تنسيقات متجاوبة */
+    @media (max-width: 767px) {
+      .navbar-brand img {
+        width: 120px !important;
+        height: 70px !important;
+      }
+      
+      .navbar.shrink img {
+        width: 80px !important;
+        height: 50px !important;
+      }
+      
+      .nav-link {
+        font-size: 14px;
+        margin: 5px 0 !important;
+        text-align: center;
+      }
+      
+      .navbar-collapse {
+        text-align: center;
+      }
+    }
+    
+    @media (max-width: 991px) {
+      .navbar-collapse {
+        text-align: center;
+      }
+      
+      .nav-item {
+        margin: 5px 0;
+      }
+    }
+  </style>
+
+</head>
+<body>
+    
+
+<nav class="navbar navbar-expand-lg bg-light navbar-light fixed-top">
+  <div class="container">
+    <!-- اللوجو -->
+    <a class="navbar-brand" href="home.html">
+      <div style="display: flex; align-items: center; gap: 10px;">
+        <img src="Images/FullLogoPNG.png" alt="logo" style="width:150px; height:90px; object-fit:contain;">
+      </div>
+    </a>
+
+    <!-- زر الموبايل -->
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" 
+      data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" 
+      aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!-- اللينكات -->
+    <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
+      <ul class="navbar-nav mb-2 mb-lg-0">
+        <li class="nav-item"><a class="nav-link active mx-3" href="home.html">Home</b></a></li>
+        <li class="nav-item"><a class="nav-link mx-3" href="aboutus.html">About us</a></li>
+        <li class="nav-item"><a class="nav-link mx-3" href="plans.html">Plans</a></li>
+        <li class="nav-item"><a class="nav-link mx-3" href="ContactUs.html"><b style="color:#007bff;">Contact Us</b></a></li>
+        <li class="nav-item"><a class="nav-link disabled mx-3">Coming Soon</a></li>
+
+        <!-- Dropdown لغة للموبايل -->
+        <li class="nav-item dropdown d-lg-none text-center mt-2">
+          <a class="lang-btn dropdown-toggle" href="#" id="mobileLang" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            EN
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="mobileLang">
+            <li><a class="dropdown-item" href="ContactUs.html">English</a></li>
+            <li><a class="dropdown-item" href="ContactUsar.html">العربية</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+
+    <!-- Dropdown لغة للديسكتوب -->
+    <div class="d-none d-lg-block dropdown ms-auto">
+      <a class="lang-btn dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+        EN
+      </a>
+      <ul class="dropdown-menu dropdown-menu-end">
+        <li><a class="dropdown-item" href="ContactUs.html">English</a></li>
+        <li><a class="dropdown-item" href="ContactUsar.html">العربية</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<script>
+  window.addEventListener("scroll", function() {
+    let navbar = document.querySelector(".navbar");
+    if (window.scrollY > 50) {
+      navbar.classList.add("shrink");
+    } else {
+      navbar.classList.remove("shrink");
+    }
+  });
+</script>
+
+<section class="py-5" 
+         style="background: linear-gradient(to top, #F3E7D9 0%, #ffffff 100%); font-family: Ubuntu, sans-serif; margin-top: 100px;">
+  <div class="container">
+    <div class="row align-items-center">
+
+      <!-- النص -->
+      <div class="col-lg-6 mb-4 mb-lg-0">
+ 
+
+        <!-- العنوان الرئيسي -->
+       <h1 class="section-title" style="font-weight:700; 
+           font-size:50px; 
+           line-height:80px; 
+           letter-spacing:2%;">
+  <span  style="color: #29ABE2;">Contact with</span> SABEQ
+</h1>
+
+
+        <!-- النص الوصفي -->
+        <p class="section-description" style="font-weight:400; 
+                  font-size:20px; 
+                  line-height:36px; 
+                  color:#747582;">
+          Every conversation is the beginning of a successful partnership.  
+          Fill in your details and let us reach out to help you build a strong presence for your brand.
+        </p>
+      </div>
+
+      <!-- الصورة -->
+      <div class="col-lg-6 text-center">
+        <img src="Images/contactus.png" 
+             class="img-fluid contact-img" 
+             alt="Contact Us Illustration"
+             style="max-width:528px; height:auto;">
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<style>
+  /* تحسينات للهواتف */
+  @media (max-width: 768px) {
+    .section-title {
+      font-size: 32px !important;
+      line-height: 45px !important;
+      text-align: center;
+    }
+    
+    .section-description {
+      font-size: 16px !important;
+      line-height: 26px !important;
+      text-align: center;
+    }
+    
+    .contact-img {
+      max-width: 90% !important;
+      margin-top: 20px;
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .section-title {
+      font-size: 28px !important;
+      line-height: 40px !important;
+    }
+    
+    .section-description {
+      font-size: 15px !important;
+      line-height: 24px !important;
+    }
+  }
+</style>
+
+
+
+<hr>
+<div class="container mt-5" id="contact">
+
+  <!-- معلومات التواصل فوق -->
+  <div class="d-flex flex-wrap justify-content-center align-items-center mb-5 text-center gap-5 contact-info">
+    <div class="d-flex align-items-center gap-2">
+      <i class="bi bi-envelope-fill text-info fs-5"></i>
+      <span><b>info@sabeq-sa.com</b></span>
+    </div>
+    <div class="d-flex align-items-center gap-2">
+      <i class="bi bi-telephone-fill text-info fs-5"></i>
+      <span><b>0537993036</b></span>
+    </div>
+  </div>
+
+
+
+
+
+<!-- Contact Form -->
+<form action="https://formspree.io/f/xkgvqbow" method="POST" 
+      class="mx-auto contact-form-container"
+      style="max-width:848px; background:#fff; border-radius:20px; padding:60px; 
+             font-family:Ubuntu, sans-serif; 
+             box-shadow:-40px 100px 70px 0px #29ABE20D, 40px 0px 70px 0px #29ABE20D;">
+
+  <!-- Full Name + Email -->
+  <div class="row g-3 mb-4 justify-content-center">
+
+    <!-- Full Name -->
+    <div class="col-md-6 d-flex justify-content-center">
+      <div class="input-container" style="width:349px; height:137px; 
+                  background:#FFFFFF; 
+                  border-radius:20px; 
+                  padding:20px;
+                  box-shadow:-40px 100px 70px 0px #29ABE20D, 
+                             40px 0px 70px 0px #29ABE20D;">
+        <label for="fullName" 
+               style="font-weight:500; font-size:18px; line-height:150%; color:#000;">
+          Full Name
+        </label>
+        <input type="text" 
+               id="fullName" 
+               name="fullName" 
+               placeholder="Enter your full name" 
+               required
+               class="form-control border-0 mt-2"
+               style="font-size:16px; background:transparent;">
+      </div>
+    </div>
+
+    <!-- Email -->
+    <div class="col-md-6 d-flex justify-content-center">
+      <div class="input-container" style="width:349px; height:137px; 
+                  background:#FFFFFF; 
+                  border-radius:20px; 
+                  padding:20px;
+                  box-shadow:-40px 100px 70px 0px #29ABE20D, 
+                             40px 0px 70px 0px #29ABE20D;">
+        <label for="emailAddress" 
+               style="font-weight:500; font-size:18px; line-height:150%; color:#000;">
+          Email
+        </label>
+        <input type="email" 
+               id="emailAddress" 
+               name="emailAddress" 
+               placeholder="Enter your email" 
+               required
+               class="form-control border-0 mt-2"
+               style="font-size:16px; background:transparent;">
+      </div>
+    </div>
+  </div>
+<!-- Choose Your Brand -->
+<div class="mb-4">
+  <div style="background:#FFFFFF; border-radius:20px; padding:20px; 
+              box-shadow:-40px 100px 70px 0px #29ABE20D, 40px 0px 70px 0px #29ABE20D;">
+    <label class="d-block mb-3" 
+           style="font-weight:500; font-size:18px; line-height:150%; color:#000;">
+      Choose Your Brand
+    </label>
+    <div class="row g-3">
+
+      <!-- Restaurant -->
+      <div class="col-md-6">
+        <div class="form-check">
+          <input class="form-check-input brand-radio" type="radio" id="restaurant" name="brand" value="Restaurant">
+          <label class="form-check-label" for="restaurant">Restaurant</label>
+        </div>
+      </div>
+
+      <!-- Cafe -->
+      <div class="col-md-6">
+        <div class="form-check">
+          <input class="form-check-input brand-radio" type="radio" id="cafe" name="brand" value="Cafe">
+          <label class="form-check-label" for="cafe">Cafe</label>
+        </div>
+      </div>
+
+      <!-- Brands -->
+      <div class="col-md-6">
+        <div class="form-check">
+          <input class="form-check-input brand-radio" type="radio" id="brands" name="brand" value="Brands">
+          <label class="form-check-label" for="brands">Brands</label>
+        </div>
+      </div>
+
+      <!-- Others -->
+      <div class="col-md-6">
+        <div class="form-check">
+          <input class="form-check-input brand-radio" type="radio" id="others" name="brand" value="Others">
+          <label class="form-check-label" for="others">Others</label>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<style>
+/* إخفاء الشكل الافتراضي */
+.brand-radio {
+  appearance: none;
+  -webkit-appearance: none;
+  width: 28px;
+  height: 28px;
+  border: none;
+  border-radius: 50%; /* دائرة */
+  background: #29ABE20D;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-right: 8px;
+}
+
+/* لما يتعمل hover */
+.brand-radio:hover {
+  box-shadow: 0 0 0 2px #29ABE2;
+}
+
+/* الشكل عند التحديد */
+.brand-radio:checked {
+  background: #29ABE20D;
+  border: 2px solid #29ABE2;
+}
+
+/* علامة الصح */
+.brand-radio:checked::after {
+  content: "";
+  width: 12px;
+  height: 10px;
+  background: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='12' height='10' viewBox='0 0 12 10' fill='none'><path d='M1 5L4.5 8.5L11 1.5' stroke='%2329ABE2' stroke-width='2.5' stroke-linecap='round' stroke-linejoin='round'/></svg>") no-repeat center center;
+  background-size: contain;
+  display: block;
+}
+
+/* تحسينات للهواتف */
+@media (max-width: 768px) {
+  .contact-form-container {
+    padding: 30px 20px !important;
+    margin: 20px 10px !important;
+  }
+  
+  .input-container {
+    width: 100% !important;
+    height: auto !important;
+    margin-bottom: 20px;
+  }
+  
+  .contact-info {
+    flex-direction: column;
+    gap: 20px !important;
+  }
+  
+  .form-check {
+    margin-bottom: 10px;
+  }
+  
+  .brand-radio {
+    width: 24px;
+    height: 24px;
+  }
+}
+
+@media (max-width: 576px) {
+  .contact-form-container {
+    padding: 20px 15px !important;
+    border-radius: 15px !important;
+  }
+  
+  .input-container {
+    height: 120px !important;
+    padding: 15px !important;
+  }
+}
+</style>
+
+  <!-- Message -->
+  <div class="mb-4">
+    <div style="background:#FFFFFF; border-radius:20px; padding:20px; 
+                box-shadow:-40px 100px 70px 0px #29ABE20D, 40px 0px 70px 0px #29ABE20D;">
+      <label for="message" 
+             style="font-weight:500; font-size:18px; line-height:150%; color:#000;">
+        Your Message
+      </label>
+      <textarea class="form-control border-0 mt-2" 
+                id="message" name="message" rows="5" 
+                placeholder="Write your message here..." 
+                required
+                style="font-size:16px; background:transparent;"></textarea>
+    </div>
+  </div>
+
+  <!-- زر الإرسال -->
+  <div class="text-center">
+    <button type="submit" class="submit-btn"
+            style="width:210px; height:68px; 
+                   background:#29ABE2; 
+                   border-radius:192px; 
+                   border:2px solid #FFFFFFCC; 
+                   box-shadow:0px 30px 50px 0px #29ABE226; 
+                   color:#FFFFFF; 
+                   font-family:Ubuntu, sans-serif; 
+                   font-weight:700; 
+                   font-size:18px; 
+                   line-height:100%; 
+                   letter-spacing:2%; 
+                   text-align:center;">
+      Send Message
+    </button>
+  </div>
+
+</form>
+
+<style>
+  /* تحسينات زرار الإرسال للهواتف */
+  @media (max-width: 768px) {
+    .submit-btn {
+      width: 180px !important;
+      height: 60px !important;
+      font-size: 16px !important;
+    }
+  }
+</style>
+
+<!-- JavaScript to allow only one checkbox selection -->
+<script>
+  const brandCheckboxes = document.querySelectorAll('.brand-checkbox');
+  brandCheckboxes.forEach(chk => {
+    chk.addEventListener('change', function() {
+      if (this.checked) {
+        brandCheckboxes.forEach(other => {
+          if (other !== this) other.checked = false;
+        });
+      }
+    });
+  });
+</script>
+</div>
+
+
+
+<!-- Footer -->
+<footer class="pt-4" style="background-color: #282c4b; color: white;">
+  <div class="container">
+    <br>
+    <div class="row align-items-center">
+      <!-- Left Side -->
+      <div class="col-md-6 mb-3 mb-md-0">
+        <h4 class="fw-bold mb-1">
+          <img src="Images/LogoMarkPNG.png" alt="logo" style="width:40px; height:auto;">
+        </h4>
+        <p class="mb-0">We craft marketing solutions that go beyond expectations.</p>
+      </div>
+
+      <!-- Right Side -->
+      <div class="col-md-6 text-md-end">
+        <p class="mb-1">
+          <i class="bi bi-envelope-fill me-2"></i>info@sabeq-sa.com
+        </p>
+        <p class="mb-0">
+          <i class="bi bi-telephone-fill me-2"></i>0537993036
+        </p>
+      </div>
+    </div>
+
+    <!-- Links + Flag + Social -->
+    <hr class="border-light">
+    <div class="row align-items-center text-center mb-3">
+      
+      <!-- Flag -->
+      <div class="col-12 col-md-4 mb-2 mb-md-0 text-md-start">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/0/0d/Flag_of_Saudi_Arabia.svg" 
+             alt="Saudi Arabia Flag" 
+             class="saudi-flag">
+      </div>
+
+      <!-- Links -->
+      <div class="col-12 col-md-4 mb-2 mb-md-0">
+        <ul class="list-inline mb-0">
+          <li class="list-inline-item mx-2"><a href="home.html" class="text-white text-decoration-none">Home</a></li>
+          <li class="list-inline-item mx-2"><a href="aboutus.html" class="text-white text-decoration-none">About Us</a></li>
+          <li class="list-inline-item mx-2"><a href="ContactUs.html" class="text-white text-decoration-none">Contact</a></li>
+        </ul>
+      </div>
+
+      <!-- Social -->
+      <div class="col-12 col-md-4 text-md-end">
+        <a href="https://www.tiktok.com/@sabeq_official" target="_blank" class="social-frame me-2">
+          <i class="bi bi-tiktok small-icon"></i>
+        </a>
+        <a href="https://www.instagram.com/sabeq_official" target="_blank" class="social-frame">
+          <i class="bi bi-instagram small-icon"></i>
+        </a>
+      </div>
+    </div>
+
+    <!-- Copyright -->
+    <div class="text-center mt-3" style="font-size: 0.85rem; color: #ccc;">
+      <p class="mb-1">© 2025 Sabeq. All Rights Reserved.</p>
+      <p class="mb-1">VAT Registration Number: 312811302900003</p>
+      <p class="mb-1">CR: 7035659916 | Effective Registration Date: 04/08/2025</p>
+    </div>
+  </div>
+  <br>
+</footer>
+
+<!-- CSS -->
+<style>
+  .small-icon {
+    font-size: 0.9rem; 
+    transition: transform 0.3s ease, color 0.3s ease;
+  }
+
+  .social-frame {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%; 
+    background-color: rgba(255, 255, 255, 0.08);
+    color: white;
+    text-decoration: none;
+    transition: background 0.3s ease, transform 0.3s ease;
+  }
+
+  .social-frame:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    transform: scale(1.1);
+  }
+
+  .saudi-flag {
+    width: 32px;
+    height: 32px;
+    object-fit: contain;
+    border-radius: 4px;
+    transition: transform 0.3s ease;
+  }
+
+  .saudi-flag:hover {
+    transform: scale(1.1);
+  }
+</style>
+
+
+
+<script src="bootstrap.bundle.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,285 @@
+/* ======= Body & Navbar ======= */
+body {
+  padding-top: 80px; /* حسب ارتفاع النافبار */
+  scroll-behavior: smooth; /* سكرول ناعم للأنكورز */
+}
+
+/* Navbar brand */
+.navbar-brand .brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.navbar-brand .brand img { 
+  width: 60px; 
+  height: auto; 
+}
+.navbar-brand .brand span {
+  font-size: 24px; 
+  font-weight: 700;
+  background: -webkit-linear-gradient(90deg, #29abe2, #000); /* دعم Safari */
+  background: linear-gradient(90deg, #29abe2, #000);
+  -webkit-background-clip: text; 
+  background-clip: text;
+  color: transparent; /* fallback */
+  -webkit-text-fill-color: transparent; /* دعم iPhone */
+}
+
+/* ======= Hero Section ======= */
+.hero-wrapper {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.hero-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  -webkit-filter: blur(4px); /* دعم Safari */
+  filter: blur(4px); /* لتأثير الخلفية */
+}
+
+.overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, rgba(0,0,0,0.25), rgba(0,0,0,0.45));
+}
+
+.caption-center { 
+  top: 0; 
+  bottom: 0; 
+  left: 50%; 
+  transform: translateX(-50%);
+  display: flex; 
+  flex-direction: column; 
+  justify-content: center; 
+  max-width: 900px;
+}
+
+/* ======= Carousel Text Shadow ======= */
+.carousel-caption h1,
+.carousel-caption h2,
+.carousel-caption p {
+  text-shadow: 2px 2px 8px rgba(0,0,0,0.6);
+}
+
+/* ======= Buttons ======= */
+.btn:hover {
+  transform: scale(1.05);
+  transition: transform 0.3s ease;
+}
+
+/* ======= Wavy Button ======= */
+.wavy-btn {
+  width: 250px;
+  height: 60px;
+  background: #fff;
+  border: 2px solid black;
+  border-radius: 20px;
+  box-shadow: 3px 3px 0 rgb(250, 175, 67);
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  transition: 0.3s;
+}
+.wavy-btn .text {
+  font-size: 20px;
+  font-weight: bold;
+  font-family: 'Poppins', sans-serif;
+  z-index: 1;
+  position: relative;
+}
+.wavy-btn .wave {
+  position: absolute;
+  width: 100%;
+  height: 50%;
+  background: #f28c38; /* لون برتقالي موحد */
+  top: 100%;
+  left: 0;
+  animation: wave 2s linear infinite;
+  transition: 0.5s;
+}
+
+@keyframes wave {
+  from { background-position-x: 0; }
+  to { background-position-x: 200%; }
+}
+.wavy-btn:hover .wave { top: 50%; }
+.wavy-btn:hover { box-shadow: 6px 6px 0 #fff; }
+
+
+
+/* ======= Highlight Cards ======= */
+.highlight-card {
+  background: #fff;
+  box-shadow: 0 1rem 2rem rgba(13,110,253,.08);
+}
+
+/* ======= Responsive ======= */
+@media (min-width: 992px) {
+  #services { margin-top: 4rem; }
+}
+
+/* ======= Animations ======= */
+@keyframes fadeInDown {
+  0% {
+    opacity: 0;
+    transform: translateY(-50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ======= Extra Elements ======= */
+.stats-card {
+  background: #1e3a8a;
+  border-radius: 15px;
+}
+.work-image {
+  position: relative;
+  overflow: hidden;
+}
+.work-image img {
+  width: 100%;
+  height: auto;
+}
+.work-image .position-absolute {
+  transform: translate(-50%, -50%);
+}
+.btn-warning {
+  background-color: #ffc107;
+  border: none;
+}
+.btn-warning:hover {
+  background-color: #ffca2c;
+}
+.image-card {
+  position: relative;
+  border-radius: 15px;
+  overflow: hidden;
+  color: white;
+}
+.image-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.overlay-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  font-size: 2rem;
+  font-weight: bold;
+  color: white;
+}
+.number-box {
+  background: linear-gradient(135deg, #0066cc, #0099ff);
+  border-radius: 15px;
+  padding: 2rem;
+  color: white;
+  height: 100%;
+}
+.avatars img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 2px solid white;
+  margin-left: -10px;
+}
+.play-btn {
+  position: absolute;
+  bottom: 15px;
+  right: 15px;
+  background: #ffb400;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 1.5rem;
+}
+.card-body {
+  display: flex;
+  flex-direction: column;
+}
+.card-body ul {
+  flex-grow: 1;
+}
+.card-body a {
+  margin-top: auto;
+}
+.payment-icon {
+  max-height: 25px;
+  width: auto;
+  object-fit: contain;
+}
+.visa-icon { max-height: 22px; }
+.paypal-icon { max-height: 20px; }
+.tabby-icon { max-height: 26px; }
+.tamara-icon { max-height: 24px; }
+.mada-icon { max-height: 25px; }
+body {
+  font-family: 'Ubuntu', sans-serif;
+}
+
+
+
+.btn-custom:hover {
+  background-color: #1e8bb8; /* أغمق شوية عند الـ hover */
+  color: #fff;
+}
+.emoji-blue {
+  filter: brightness(0) saturate(100%) invert(56%) sepia(55%) saturate(6262%) hue-rotate(162deg) brightness(95%) contrast(91%);
+}
+
+.navbar {
+  background-color: #fff !important;   /* أبيض */
+  /* أو بيج */
+  /* background-color: #fdfaf6 !important; */
+}
+
+
+ #plan {
+    position: relative;
+    overflow: hidden;
+    background:
+      linear-gradient(135deg, rgba(255,255,255,0.0) 30%, rgba(255,255,255,0.0) 60%),
+      linear-gradient(135deg, rgba(255,255,255,0.05) 0%, rgba(255,255,255,0.00) 40%),
+      url('Images/Pricing_bg.png') no-repeat center/cover;
+    border-radius: 20px;
+    padding: 60px 30px; 
+ }
+.btn-get-started {
+  width: 210px;
+  height: 68px;
+  border-radius: 192px;
+  background: #29ABE2;
+  border: 2px solid #FFFFFFCC;
+  box-shadow: 0px 30px 50px 0px #29ABE226;
+  font-family: Ubuntu, sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+  color: #FFFFFF;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+/* ✅ Hover effect */
+.btn-get-started:hover {
+  background: #1F8DBF; /* أغمق سنة */
+  transform: translateY(-4px); /* يطلع لفوق خفيف */
+  box-shadow: 0px 35px 55px 0px #29ABE240; /* شادو أقوى */
+}
+
+
+
+

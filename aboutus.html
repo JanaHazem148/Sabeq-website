@@ -1,0 +1,1201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <link rel="stylesheet" href="bootstrap.min.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" />
+  <link rel="stylesheet" href="style.css" />
+
+  <title>About Us - SABEQ</title>
+<meta name="description" content="Learn more about SABEQ — our mission, values, and commitment to providing marketing solutions that go beyond expectations.">
+
+<!-- Favicon -->
+<link rel="icon" href="Images/LogoMarkPNG.png" type="image/png" />
+
+  <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap" rel="stylesheet">
+
+    
+  
+</head>
+<body>
+<nav class="navbar navbar-expand-lg bg-light navbar-light fixed-top">
+  <div class="container">
+    <!-- اللوجو -->
+    <a class="navbar-brand" href="home.html">
+      <div style="display: flex; align-items: center; gap: 10px;">
+        <img src="Images/FullLogoPNG.png" alt="logo" style="width:150px; height:90px; object-fit:contain;">
+      </div>
+    </a>
+
+    <!-- زر الموبايل -->
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" 
+      data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" 
+      aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!-- اللينكات -->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mb-2 mb-lg-0 mx-auto text-center">
+        <li class="nav-item"><a class="nav-link active mx-3" href="home.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link mx-3" href="aboutus.html"><b style="color:#007bff;">About us</b></a></li>
+        <li class="nav-item"><a class="nav-link mx-3" href="plans.html">Plans</a></li>
+        <li class="nav-item"><a class="nav-link mx-3" href="ContactUs.html">Contact Us</a></li>
+        <li class="nav-item"><a class="nav-link disabled mx-3">Coming Soon</a></li>
+
+        <!-- Dropdown لغة للموبايل -->
+        <li class="nav-item dropdown d-lg-none text-center mt-2">
+          <a class="lang-btn dropdown-toggle" href="#" id="mobileLang" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            EN
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="mobileLang">
+            <li><a class="dropdown-item" href="aboutus.html">English</a></li>
+            <li><a class="dropdown-item" href="aboutusar.html">العربية</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+
+    <!-- Dropdown لغة للديسكتوب -->
+    <div class="d-none d-lg-block dropdown ms-auto">
+      <a class="lang-btn dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+        EN
+      </a>
+      <ul class="dropdown-menu dropdown-menu-end">
+        <li><a class="dropdown-item" href="aboutus.html">English</a></li>
+        <li><a class="dropdown-item" href="aboutusar.html">العربية</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<style>
+/* زر اللغة */
+.lang-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 90px;
+  height: 55px;
+  border: 1px solid #FAAF4380;
+  background: #FFFFFF;
+  border-radius: 80px;
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 100%;
+  color: #282C4B;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.lang-btn:hover,
+.lang-btn:focus {
+  background: #FAAF43;
+  color: #fff;
+}
+
+/* navbar */
+.navbar {
+  transition: all 0.3s ease;
+  padding: 20px 0;
+}
+
+.navbar.shrink {
+  padding: 5px 0;
+}
+
+.navbar img {
+  transition: all 0.3s ease;
+}
+
+.navbar.shrink img {
+  width: 100px !important;
+  height: 60px !important;
+  transition: all 0.3s ease;
+}
+
+/* تعديلات للهواتف المحمولة */
+@media (max-width: 991px) {
+  .navbar-collapse {
+    text-align: center;
+  }
+  
+  .navbar-nav {
+    width: 100%;
+    flex-direction: column;
+  }
+  
+  .nav-item {
+    margin: 8px 0;
+  }
+  
+  .nav-link {
+    font-size: 16px; /* حجم خط أصغر */
+    padding: 8px 0;
+    font-weight: 500;
+  }
+  
+  .dropdown-menu {
+    text-align: center;
+  }
+  
+  .dropdown-item {
+    font-size: 14px; /* حجم خط أصغر للغة */
+  }
+}
+</style>
+
+
+<script>
+  window.addEventListener("scroll", function() {
+    let navbar = document.querySelector(".navbar");
+    if (window.scrollY > 50) {
+      navbar.classList.add("shrink");
+    } else {
+      navbar.classList.remove("shrink");
+    }
+  });
+</script>
+
+<section class="hero py-5" 
+         style="overflow:hidden; background: linear-gradient(to top, #F3E7D9 0%, #ffffff 100%);">
+  <div class="container">
+    <div class="row align-items-center">
+
+      <!-- النص -->
+      <div class="col-lg-6 mb-4 mb-lg-0">
+        <!-- العنوان الصغير بالبرتقالي -->
+    
+
+        <!-- العنوان الرئيسي -->
+        <h2 class="about-title mb-3">
+          About Us <span class="highlight " style="color: #29ABE2;">SABEQ</span>
+        </h2>
+
+        <!-- الوصف -->
+        <p class="about-desc mb-4">
+          We amplify your brand's voice <span class="highlight"  style="color: #29ABE2;">with bold, authentic strategies that spark real connections.</span>
+        </p>
+        <p class="about-desc mb-4">
+          At SABEQ, we don't just create campaigns—we craft experiences that resonate, inspire, and drive measurable success. Let's shape a story that captivates your audience and elevates your brand to new heights.
+        </p>
+
+<!-- الإحصائيات -->
+<div class="d-flex flex-wrap gap-4 stats justify-content-start ps-4">
+  <div class="text-center">
+    <h5 class="counter fw-bold mb-0" data-target="6">0</h5>
+    <small class="text-muted " style="font-size:1.1rem; font-weight:500;">Last Months</small>
+  </div>
+
+  <div class="text-center">
+    <h5 class="counter fw-bold mb-0" data-target="60">0K</h5>
+    <small class="text-muted"style="font-size:1.1rem; font-weight:500;">Projects</small>
+  </div>
+
+  <div class="text-center">
+    <h5 class="counter fw-bold mb-0" data-target="32">0</h5>
+    <small class="text-muted" style="font-size:1.1rem; font-weight:500;">Clients</small>
+  </div>
+</div>
+
+
+      </div>
+
+      <!-- الصورة -->
+      <div class="col-lg-6 text-center">
+        <img src="Images/aboutus.png" 
+             class="img-fluid about-img" 
+             alt="Hero Image">
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CSS -->
+<style>
+  .best-platform {
+    font-family: Ubuntu, sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 100%;
+    letter-spacing: 0;
+    color: #FAAF43;
+    margin-bottom: 1rem;
+  }
+
+  .about-title {
+    font-family: Ubuntu, sans-serif;
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 80px;
+    letter-spacing: 2%;
+    color: #1c1c1c;
+  }
+
+  .about-title .highlight {
+    color: #0d6efd;
+  }
+
+  .about-desc {
+    font-family: Ubuntu, sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 36px;
+    letter-spacing: 0;
+    color: #747582;
+  }
+
+  .about-desc .highlight {
+    color: #007bff;
+  }
+
+  .counter {
+    font-family: Ubuntu, sans-serif;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 100%;
+    letter-spacing: -2%;
+    text-transform: capitalize;
+    color: #092857;
+  }
+
+  .counter .plus {
+    color: #29ABE2;
+  }
+
+  .counter-label {
+    font-family: Ubuntu, sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 100%;
+    letter-spacing: -2%;
+    text-transform: capitalize;
+    color: #092857;
+    margin-top: 5px;
+  }
+
+  .stats div {
+    min-width: 100px;
+  }
+
+  .about-img {
+    width: 100%;      /* تاخد العرض المتاح */
+    max-width: 528px; /* أقصى عرض */
+    height: auto;     /* عشان الريسبونسف */
+    border-radius: 10px;
+    margin: auto;
+  }
+</style>
+
+<script>
+function startCounters() {
+  const counters = document.querySelectorAll(".counter");
+  const duration = 2000; // المدة بالـ ms (هنا 2 ثانية)
+  const startTime = performance.now();
+
+  const updateCounters = (now) => {
+    const elapsed = now - startTime;
+    const progress = Math.min(elapsed / duration, 1); // من 0 لحد 1
+
+    counters.forEach(counter => {
+      const target = +counter.getAttribute("data-target");
+      const suffix = counter.getAttribute("data-suffix") || "";
+      const value = Math.floor(progress * target);
+      counter.innerHTML = `<span class="plus">+</span>${value}${suffix}`;
+    });
+
+    if (progress < 1) {
+      requestAnimationFrame(updateCounters);
+    } else {
+      // نخلي الكل يوقف على الرقم النهائي بالظبط
+      counters.forEach(counter => {
+        const target = +counter.getAttribute("data-target");
+        const suffix = counter.getAttribute("data-suffix") || "";
+        counter.innerHTML = `<span class="plus">+</span>${target}${suffix}`;
+      });
+    }
+  };
+
+  requestAnimationFrame(updateCounters);
+}
+
+// تشغيل العدادات لما تظهر في الشاشة
+const countersSection = document.querySelector(".stats");
+if (countersSection) {
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        startCounters();
+        observer.disconnect();
+      }
+    });
+  }, { threshold: 0.5 });
+
+  observer.observe(countersSection);
+}
+</script>
+
+
+
+
+<section class="py-5" style="background-color:#f8f9fa;">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-lg-10">
+        <div class="card shadow-lg border-0 rounded-4 p-5 text-center">
+          <!-- أيقونة -->
+          <div class="mb-3">
+            <i class="bi bi-award-fill" style="font-size:2rem; color:#007bff;"></i>
+          </div>
+
+          <!-- العنوان -->
+          <h2 class="fw-bold mb-4" style="color:black;">
+            A service built on trust, <span  style="color: #29ABE2;">measured by results.</span>
+          </h2>
+
+<!-- النص -->
+          <p class="lead text-muted mb-0">
+            Success is not measured by promises. It is measured by what is truly achieved on the ground. 
+            That's why we focus on execution details and work as one team, giving every client a unique 
+            experience that strengthens their presence in the market and creates a tangible impact in sales 
+            and engagement.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+<hr>
+<br>
+<br>
+
+
+<section class="video-section">
+  <div class="container">
+    <h2 class="section-title">
+      Real-world examples of how we have helped Brands achieve their marketing objectives.
+    </h2>
+
+    <br><br>
+    <div class="slider">
+      <div class="slides">
+
+        <!-- فيديو 1 -->
+        <div class="reel card">
+          <a href="https://www.tiktok.com/@m..riyadh/video/7501298799671889159" target="_blank" class="video-thumb">
+            <img src="Images\video1.png" alt="TikTok Video 1">
+            <span class="play-icon">▶</span>
+          </a>
+          <a href="https://www.tiktok.com/@m..riyadh/video/7501298799671889159" target="_blank" class="btn-tiktok">Watch on TikTok</a>
+        </div>
+
+        <!-- فيديو 2 -->
+        <div class="reel card">
+          <a href="https://www.tiktok.com/@bashaeir_18/video/7455011450407472402" target="_blank" class="video-thumb">
+            <img src="Images\video2.png" alt="TikTok Video 2">
+            <span class="play-icon">▶</span>
+          </a>
+          <a href="https://www.tiktok.com/@bashaeir_18/video/7455011450407472402" target="_blank" class="btn-tiktok">Watch on TikTok</a>
+        </div>
+
+        <!-- فيديو 3 -->
+        <div class="reel card">
+          <a href="https://www.tiktok.com/@hx92x/video/7503886273300548882" target="_blank" class="video-thumb">
+            <img src="Images\video3.png" alt="TikTok Video 3">
+            <span class="play-icon">▶</span>
+          </a>
+          <a href="https://www.tiktok.com/@hx92x/video/7503886273300548882" target="_blank" class="btn-tiktok">Watch on TikTok</a>
+        </div>
+
+        <!-- فيديو 4 -->
+        <div class="reel card">
+          <a href="https://www.tiktok.com/@ass.saudi/video/7458781143601646856" target="_blank" class="video-thumb">
+            <img src="Images\video4.png" alt="TikTok Video 4">
+            <span class="play-icon">▶</span>
+          </a>
+          <a href="https://www.tiktok.com/@ass.saudi/video/7458781143601646856" target="_blank" class="btn-tiktok">Watch on TikTok</a>
+        </div>
+
+        <!-- فيديو 5 -->
+        <div class="reel card">
+          <a href="https://www.tiktok.com/@sara.saudihfood/video/7521785617936600328" target="_blank" class="video-thumb">
+            <img src="Images\video5.png" alt="TikTok Video 5">
+            <span class="play-icon">▶</span>
+          </a>
+          <a href="https://www.tiktok.com/@sara.saudihfood/video/7521785617936600328" target="_blank" class="btn-tiktok">Watch on TikTok</a>
+        </div>
+
+        <!-- فيديو 6 -->
+        <div class="reel card">
+          <a href="https://www.tiktok.com/@arrosh.vlogger/video/7545574993682287892" target="_blank" class="video-thumb">
+            <img src="Images\video6.png" alt="TikTok Video 6">
+            <span class="play-icon">▶</span>
+          </a>
+          <a href="https://www.tiktok.com/@arrosh.vlogger/video/7545574993682287892" target="_blank" class="btn-tiktok">Watch on TikTok</a>
+        </div>
+
+        <!-- فيديو 7 -->
+        <div class="reel card">
+          <a href="https://www.tiktok.com/@a7lam028/video/7501398832056454408" target="_blank" class="video-thumb">
+            <img src="Images\video7.png" alt="TikTok Video 7">
+            <span class="play-icon">▶</span>
+          </a>
+          <a href="https://www.tiktok.com/@a7lam028/video/7501398832056454408" target="_blank" class="btn-tiktok">Watch on TikTok</a>
+        </div>
+
+        <!-- فيديو 8 -->
+        <div class="reel card">
+          <a href="https://www.tiktok.com/@lmoo199/video/7479107023209073927" target="_blank" class="video-thumb">
+            <img src="Images\video8.png" alt="TikTok Video 8">
+            <span class="play-icon">▶</span>
+          </a>
+          <a href="https://www.tiktok.com/@lmoo199/video/7479107023209073927" target="_blank" class="btn-tiktok">Watch on TikTok</a>
+        </div>
+
+        <!-- فيديو 9 -->
+        <div class="reel card">
+          <a href="https://www.tiktok.com/@nasa2.28/video/7517407483955039496" target="_blank" class="video-thumb">
+            <img src="Images\video9.png" alt="TikTok Video 9">
+            <span class="play-icon">▶</span>
+          </a>
+          <a href="https://www.tiktok.com/@nasa2.28/video/7517407483955039496" target="_blank" class="btn-tiktok">Watch on TikTok</a>
+        </div>
+
+        <!-- فيديو 10 -->
+        <div class="reel card">
+          <a href="https://www.tiktok.com/@juwlyna_99/video/7521737836207426834" target="_blank" class="video-thumb">
+            <img src="Images\video10.png" alt="TikTok Video 10">
+            <span class="play-icon">▶</span>
+          </a>
+          <a href="https://www.tiktok.com/@juwlyna_99/video/7521737836207426834" target="_blank" class="btn-tiktok">Watch on TikTok</a>
+        </div>
+
+      
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+
+.video-section {
+  background: linear-gradient(135deg, #F3E7D9, #E3EEFF);
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.section-title {
+  background: linear-gradient(90deg, #007bff, #FAAF43);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.slider {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+.slides {
+  display: flex;
+  width: max-content;
+  animation: slide 60s linear infinite;
+  gap: 30px;
+}
+
+.slides:hover {
+  animation-play-state: paused;
+}
+
+.card {
+  background: #fff;
+  border-radius: 20px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+/* الصور المصغرة */
+.video-thumb {
+  position: relative;
+  display: block;
+  width: 250px;
+  height: 444px;
+  border-radius: 16px;
+  overflow: hidden;
+}
+
+.video-thumb img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* أيقونة البلاي */
+.play-icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 48px;
+  color: white;
+  text-shadow: 0 0 10px rgba(0,0,0,0.7);
+  pointer-events: none;
+}
+
+.btn-tiktok {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 8px 14px;
+  background: linear-gradient(90deg, #ff0050, #00f2ea);
+  color: white;
+  font-size: 14px;
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 8px;
+  transition: 0.3s ease;
+}
+
+.btn-tiktok:hover {
+  transform: scale(1.05);
+  opacity: 0.9;
+}
+
+/* تعديل على الموبايل */
+@media (max-width: 991px) {
+  .slider {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    scroll-snap-type: x mandatory;
+    scrollbar-width: none; /* يخفي الاسكرول بار */
+  }
+
+  .slider::-webkit-scrollbar {
+    display: none;
+  }
+
+  .slides {
+    animation: none; /* نوقف الانيميشن */
+    gap: 20px;
+  }
+
+  .card {
+    flex: 0 0 auto;
+    scroll-snap-align: center;
+  }
+}
+
+/* الأنيميشن للـ Desktop */
+@keyframes slide {
+  from { transform: translateX(0); }
+  to { transform: translateX(-50%); }
+}
+
+</style>
+
+
+
+
+<br>
+<br>
+<br>
+<hr>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<section class="py-5">
+  <div class="container">
+    <div class="row align-items-start">
+      
+      <!-- العنوان والنص -->
+      <div class="col-lg-4 col-md-12 mb-4 mb-lg-0">
+        <div class="faq-left-box">
+          <h2 class="faq-title">SABEQ FAQs</h2>
+          <p class="faq-subtitle">
+            As a leading digital marketing agency, we are dedicated to providing comprehensive educational 
+            resources and answering frequently asked questions to help our clients.
+          </p>
+        </div>
+      </div>
+
+      <!-- الأسئلة -->
+      <div class="col-lg-8 col-md-12">
+        <div class="faq-box">
+          
+          <!-- Q1 -->
+          <div class="faq-item">
+            <button class="faq-question">
+              When do campaign results start to appear after launch?
+            </button>
+            <div class="faq-answer">
+              Results usually begin to appear after the first week.
+            </div>
+          </div>
+
+          <!-- Q2 -->
+          <div class="faq-item">
+            <button class="faq-question">
+              Is the list of bloggers shared with the client before the campaign?
+            </button>
+            <div class="faq-answer">
+              For hospitality bloggers and those paid SAR 300, only the invitation codes are shared 
+              for attending the activity. <br><br>
+              For bloggers paid SAR 1,000 or more, their details are shared with the client 
+              after signing the official agreement.
+            </div>
+          </div>
+
+          <!-- Q3 -->
+          <div class="faq-item">
+            <button class="faq-question">
+              What is the process for selecting the right blogger for each campaign?
+            </button>
+            <div class="faq-answer">
+              Bloggers are chosen based on their relevance to the target audience, the nature of the 
+              activity, their engagement level, and the quality of their content.
+            </div>
+          </div>
+
+          <!-- Q4 -->
+          <div class="faq-item">
+            <button class="faq-question">
+              What makes SABEQ different from other agencies?
+            </button>
+            <div class="faq-answer">
+              Speed of execution, attention to detail, delivering high quality at the best cost, 
+              and proven expertise through  successful projects.
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CSS -->
+<style>
+  /* البوكس اللي فيه العنوان والنص */
+  .faq-left-box {
+    max-width: 531px;
+    min-height: 150px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px; /* مسافة بين العنوان والجملة */
+  }
+
+@media (min-width: 992px) {
+    .faq-left-box {
+      margin-right: 40px; /* مسافة بين العمود الشمال واليمين */
+    }
+  }
+
+  .faq-title {
+    font-family: Ubuntu, sans-serif;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 130%;
+    letter-spacing: -3%;
+    color: #010205;
+  }
+
+  .faq-subtitle {
+    font-family: Ubuntu, sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 180%;
+    letter-spacing: 0;
+    color: #878C91;
+  }
+
+  .faq-box {
+    border-top: 1px solid #ddd;
+  }
+
+  .faq-item {
+    border-bottom: 1px solid #ddd;
+  }
+
+  .faq-question {
+    width: 100%;
+    text-align: left;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-family: Ubuntu, sans-serif;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 150%;
+    letter-spacing: -3%;
+    color: #010205;
+    padding: 20px 0;
+    position: relative;
+    cursor: pointer;
+  }
+
+  /* علامة + و - */
+  .faq-question::after {
+    content: '+';
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #000;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  .faq-question.active::after {
+    content: '-';
+  }
+
+  .faq-answer {
+    font-family: Ubuntu, sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 180%;
+    color: #878C91;
+    padding: 0 0 20px;
+    display: none;
+  }
+
+  .faq-answer.show {
+    display: block;
+  }
+  
+</style>
+
+<!-- JavaScript -->
+<script>
+  const questions = document.querySelectorAll(".faq-question");
+
+  questions.forEach(q => {
+    q.addEventListener("click", () => {
+      const isActive = q.classList.contains("active");
+
+      // قفل كل البوكسات
+      questions.forEach(item => {
+        item.classList.remove("active");
+        item.nextElementSibling.classList.remove("show");
+      });
+
+      // لو مش مفتوح افتحه، لو مفتوح يفضل مقفول
+      if (!isActive) {
+        q.classList.add("active");
+        q.nextElementSibling.classList.add("show");
+      }
+    });
+  });
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="container mt-5" id="contact">
+  <div class="row align-items-center">
+    
+    <!-- صورة على الشمال -->
+    <div class="col-md-5 text-center mb-4 mb-md-0 position-relative">
+      <img src="Images/Group9146.png" 
+           alt="Background Shape" 
+           class="img-fluid position-absolute top-50 start-50 translate-middle" 
+           style="max-height: 500px; z-index: 1; opacity: 0.9;">
+      <img src="Images/Marketing.png" 
+           class="img-fluid position-relative" 
+           alt="Illustration of Contact Us Section" 
+           style="max-height: 420px; z-index: 2;">
+    </div>
+
+    <!-- الفورم على اليمين -->
+    <div class="col-md-7">
+      
+      <!-- النص البرتقالي الصغير -->
+      <p class="contact-small">
+        CONTACT US
+      </p>
+      <br>
+      
+      <!-- العنوان الرئيسي -->
+      <h2 class="contact-title">
+        Let's Collaborate Now!
+      </h2>
+      
+      <!-- وصف -->
+      <p class="contact-desc mb-4">
+        We'd love to hear from you! Fill out the form below and our team will get back to you soon.
+      </p>
+
+      <form action="https://formspree.io/f/xkgvqbow" method="POST">
+
+        <!-- Full Name -->
+        <div class="mb-3">
+          <label for="fullName" class="form-label label-text">Full Name</label>
+          <input type="text" class="form-control input-long" id="fullName" name="fullName" placeholder="Input your Name" required>
+        </div>
+        
+        <!-- Email + Date -->
+        <div class="row g-3">
+          <div class="col-md-6">
+            <label for="emailAddress" class="form-label label-text">Email</label>
+            <input type="email" class="form-control input-half" id="emailAddress" name="emailAddress" placeholder="Input your Email" required>
+          </div>
+
+<div class="col-md-6">
+  <label for="date" class="form-label label-text">Date</label>
+  <div class="position-relative">
+    <input type="date" class="form-control input-half ps-5 custom-date" id="date" name="date">
+    <span class="position-absolute top-50 start-0 translate-middle-y ps-2" style="cursor: pointer;" onclick="document.getElementById('date').showPicker()">
+      <img src="Images/Calendar.png" alt="calendar" style="width:20px; height:20px;">
+    </span>
+  </div>
+</div>
+
+<style>
+/* إخفاء أيكون الـ calendar الافتراضي */
+.custom-date::-webkit-calendar-picker-indicator {
+  display: none;
+  -webkit-appearance: none;
+}
+</style>
+
+        </div>
+
+        <!-- Brand -->
+        <div class="mb-3">
+          <label for="brandName" class="form-label label-text">Choose Your Brand</label>
+          <input type="text" class="form-control input-long" id="brandName" name="brandName" placeholder="Enter brand name">
+        </div>
+        
+        <!-- Message -->
+        <div class="mb-3">
+          <label for="message" class="form-label label-text">Message</label>
+          <textarea class="form-control input-long ps-3" id="message" name="message" rows="4" placeholder="Write your Message" required></textarea>
+        </div>
+        <!-- Button -->
+<div class="text-center">
+  <button type="submit" class="btn submit-btn">
+    <span class="btn-text">Send Message</span>
+  </button>
+</div>
+
+<style>
+  .submit-btn {
+    width: 210px;
+    height: 68px;
+    border-radius: 192px;
+    background: #29ABE2;
+    border: 2px solid #FFFFFFCC; /* أبيض شفاف */
+    box-shadow: 0px 30px 50px 0px #29ABE226;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+    margin: 0 auto; /* للتأكد من التوسيط */
+  }
+
+  .submit-btn:hover {
+    background: #1f94c7; /* لون أغمق شوية عند الهوفر */
+  }
+
+  .btn-text {
+    width: 127px;
+    height: 21px;
+
+    font-family: Ubuntu, sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 100%;
+    letter-spacing: 2%;
+    color: #FFFFFF;
+    text-align: center;
+  }
+</style>
+
+
+<style>
+  .submit-btn {
+    width: 210px;
+    height: 68px;
+    border-radius: 192px;
+    background: #29ABE2;
+    border: 2px solid #FFFFFFCC; /* أبيض شفاف */
+    box-shadow: 0px 30px 50px 0px #29ABE226;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+  }
+
+  .submit-btn:hover {
+    background: #1f94c7; /* لون أغمق شوية عند الهوفر */
+  }
+
+  .btn-text {
+    width: 127px;
+    height: 21px;
+
+    font-family: Ubuntu, sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 100%;
+    letter-spacing: 2%;
+    color: #FFFFFF;
+    text-align: center;
+  }
+</style>
+
+      </form>
+    </div>
+  </div>
+</div>
+
+<br><br>
+<hr>
+
+<!-- CSS -->
+<style>
+  /* النص البرتقالي الصغير */
+  .contact-small {
+    font-family: Ubuntu, sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    color: #FAAF43;
+    text-transform: uppercase;
+  }
+
+  /* العنوان الرئيسي */
+  .contact-title {
+    font-family: Ubuntu, sans-serif;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 53px;
+    letter-spacing: 2%;
+    color: #282C4B;
+  }
+
+  /* الوصف */
+  .contact-desc {
+    font-family: Ubuntu, sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 28px;
+    color: #14142B;
+  }
+
+  /* اللابلز فوق كل بوكس */
+  .label-text {
+    font-family: Ubuntu, sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 32px;
+    color: #14183E;
+  }
+
+  /* البوكسات */
+  .input-long,
+  .input-half {
+    width: 100%;
+    height: 58px;
+    background-color: #29ABE20D;
+    border: none;
+    border-radius: 10px;
+    font-family: Ubuntu, sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 100%;
+    color: #747582;
+    padding-left: 15px;
+    box-sizing: border-box;
+  }
+
+  .input-long::placeholder,
+  .input-half::placeholder {
+    font-family: Ubuntu, sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 100%;
+    color: #747582;
+    opacity: 1;
+  }
+
+  textarea.input-long {
+    height: auto;
+    padding-top: 10px;
+  }
+
+  /* شيل أيقونة الـ default من input date */
+  input[type="date"]::-webkit-calendar-picker-indicator {
+    opacity: 0;
+    cursor: pointer;
+  }
+
+  /* زرار */
+  .submit-btn {
+    background-color: #29abe2;
+    border: none;
+    border-radius: 30px;
+    color: #fff;
+    font-family: Ubuntu, sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+  }
+</style>
+<!-- Footer -->
+<footer class="pt-4" style="background-color: #282c4b; color: white;">
+  <div class="container">
+    <br>
+    <div class="row align-items-center">
+      <!-- Left Side -->
+      <div class="col-md-6 mb-3 mb-md-0">
+        <h4 class="fw-bold mb-1">
+          <img src="Images/LogoMarkPNG.png" alt="logo" style="width:40px; height:auto;">
+        </h4>
+        <p class="mb-0">We craft marketing solutions that go beyond expectations.</p>
+      </div>
+
+      <!-- Right Side -->
+      <div class="col-md-6 text-md-end">
+        <p class="mb-1">
+          <i class="bi bi-envelope-fill me-2"></i>info@sabeq-sa.com
+        </p>
+        <p class="mb-0">
+          <i class="bi bi-telephone-fill me-2"></i>0537993036
+        </p>
+      </div>
+    </div>
+
+    <!-- Links + Flag + Social -->
+    <hr class="border-light">
+    <div class="row align-items-center text-center mb-3">
+      
+      <!-- Flag -->
+      <div class="col-12 col-md-4 mb-2 mb-md-0 text-md-start">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/0/0d/Flag_of_Saudi_Arabia.svg" 
+             alt="Saudi Arabia Flag" 
+             class="saudi-flag">
+      </div>
+
+      <!-- Links -->
+      <div class="col-12 col-md-4 mb-2 mb-md-0">
+        <ul class="list-inline mb-0">
+          <li class="list-inline-item mx-2"><a href="home.html" class="text-white text-decoration-none">Home</a></li>
+          <li class="list-inline-item mx-2"><a href="aboutus.html" class="text-white text-decoration-none">About Us</a></li>
+          <li class="list-inline-item mx-2"><a href="ContactUs.html" class="text-white text-decoration-none">Contact</a></li>
+        </ul>
+      </div>
+
+      <!-- Social -->
+      <div class="col-12 col-md-4 text-md-end">
+        <a href="https://www.tiktok.com/@sabeq_official" target="_blank" class="social-frame me-2">
+          <i class="bi bi-tiktok small-icon"></i>
+        </a>
+        <a href="https://www.instagram.com/sabeq_official" target="_blank" class="social-frame">
+          <i class="bi bi-instagram small-icon"></i>
+        </a>
+      </div>
+    </div>
+
+    <!-- Copyright -->
+    <div class="text-center mt-3" style="font-size: 0.85rem; color: #ccc;">
+      <p class="mb-1">© 2025 Sabeq. All Rights Reserved.</p>
+      <p class="mb-1">VAT Registration Number: 312811302900003</p>
+      <p class="mb-1">CR: 7035659916 | Effective Registration Date: 04/08/2025</p>
+    </div>
+  </div>
+  <br>
+</footer>
+
+<!-- CSS -->
+<style>
+  .small-icon {
+    font-size: 0.9rem; 
+    transition: transform 0.3s ease, color 0.3s ease;
+  }
+
+  .social-frame {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%; 
+    background-color: rgba(255, 255, 255, 0.08);
+    color: white;
+    text-decoration: none;
+    transition: background 0.3s ease, transform 0.3s ease;
+  }
+
+  .social-frame:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    transform: scale(1.1);
+  }
+
+  .saudi-flag {
+    width: 32px;
+    height: 32px;
+    object-fit: contain;
+    border-radius: 4px;
+    transition: transform 0.3s ease;
+  }
+
+  .saudi-flag:hover {
+    transform: scale(1.1);
+  }
+</style>
+
+
+
+<script src="bootstrap.bundle.min.js"></script>
+</body>
+</html>

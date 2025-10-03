@@ -1,0 +1,1153 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <!-- روابط الاستايل -->
+  <link rel="stylesheet" href="bootstrap.min.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" />
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap&subset=arabic" rel="stylesheet">
+
+  <title>الخطط - سابِق</title>
+  <meta name="description" content="استكشف خطط سابِق المرنة — التجريبية، الفضية، الذهبية، والماسية — المصممة لمساعدة عملك على النمو بحلول مخصصة.">
+
+  <!-- أيقونة الموقع -->
+  <link rel="icon" href="Images/LogoMarkPNG.png" type="image/png" />
+
+</head>
+
+
+<body>
+
+<!-- شريط التنقل -->
+<nav class="navbar navbar-expand-lg bg-light navbar-light fixed-top">
+  <div class="container">
+
+    <!-- اللوجو -->
+    <a class="navbar-brand" href="homear.html">
+      <div style="display: flex; align-items: center; gap: 10px; flex-direction: row-reverse;">
+        <img src="Images/FullLogoPNG.png" alt="الشعار" style="width:150px; height:90px; object-fit:contain;">
+      </div>
+    </a>
+
+    <!-- زر الموبايل -->
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" 
+      data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" 
+      aria-expanded="false" aria-label="فتح القائمة">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!-- الروابط -->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mb-2 mb-lg-0 mx-auto text-center">
+        <li class="nav-item"><a class="nav-link active mx-3" href="homear.html">الرئيسية</a></li>
+        <li class="nav-item"><a class="nav-link mx-3" href="aboutusar.html">من نحن</a></li>
+        <li class="nav-item"><a class="nav-link mx-3" href="plansar.html"><b style="color:#007bff;">الباقات</b></a></li>
+        <li class="nav-item"><a class="nav-link mx-3" href="Contactusar.html">تواصل معنا</a></li>
+        <li class="nav-item"><a class="nav-link disabled mx-3">قريباً</a></li>
+
+        <!-- Dropdown لغة للموبايل -->
+        <li class="nav-item dropdown d-lg-none text-center mt-2">
+          <a class="lang-btn dropdown-toggle" href="#" id="mobileLang" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            العربية
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="mobileLang">
+            <li><a class="dropdown-item" href="plans.html">English</a></li>
+            <li><a class="dropdown-item" href="plansar.html">العربية</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+
+    <!-- Dropdown لغة للديسكتوب -->
+    <div class="d-none d-lg-block dropdown ms-auto">
+      <a class="lang-btn dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+        العربية
+      </a>
+      <ul class="dropdown-menu dropdown-menu-end">
+        <li><a class="dropdown-item" href="plans.html">English</a></li>
+        <li><a class="dropdown-item" href="plansar.html">العربية</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<style>
+/* زر اللغة */
+.lang-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 90px;
+  height: 55px;
+  border: 1px solid #FAAF4380;
+  background: #FFFFFF;
+  border-radius: 80px;
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 100%;
+  color: #282C4B;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.lang-btn:hover,
+.lang-btn:focus {
+  background: #FAAF43;
+  color: #fff;
+}
+
+/* navbar */
+.navbar {
+  transition: all 0.3s ease;
+  padding: 20px 0;
+}
+
+.navbar.shrink {
+  padding: 5px 0;
+}
+
+.navbar img {
+  transition: all 0.3s ease;
+}
+
+.navbar.shrink img {
+  width: 100px !important;
+  height: 60px !important;
+  transition: all 0.3s ease;
+}
+
+/* تعديلات للهواتف المحمولة */
+@media (max-width: 991px) {
+  .navbar-collapse {
+    text-align: center;
+  }
+  
+  .navbar-nav {
+    width: 100%;
+    flex-direction: column;
+  }
+  
+  .nav-item {
+    margin: 8px 0;
+  }
+  
+  .nav-link {
+    font-size: 14px; /* حجم خط أصغر */
+    padding: 8px 0;
+    font-weight: 500;
+  }
+  
+  .dropdown-menu {
+    text-align: center;
+  }
+  
+  .dropdown-item {
+    font-size: 12px; /* حجم خط أصغر للغة */
+  }
+}
+</style>
+
+<script>
+  window.addEventListener("scroll", function() {
+    let navbar = document.querySelector(".navbar");
+    if (window.scrollY > 50) {
+      navbar.classList.add("shrink");
+    } else {
+      navbar.classList.remove("shrink");
+    }
+  });
+</script>
+
+<!-- القسم الأول -->
+<section class="py-5" 
+         style="background: linear-gradient(to top, #F3E7D9 0%, #ffffff 100%); font-family: Ubuntu, sans-serif; direction: rtl; text-align: right;">
+  <div class="container">
+    <div class="row align-items-center">
+      
+      <!-- النص (يمين) -->
+      <div class="col-lg-6 order-1 order-lg-1">
+        <!-- العنوان الأساسي -->
+        <h1 class="fw-bold mb-4">
+          <span style="color: #29abe2;">
+            باقات
+          </span> سابق..
+        </h1>
+
+        <!-- النص الفرعي -->
+        <p class="platform-subtitle">
+          نحن ندرك أن لكل عمل تجاري أهدافه الخاصة، ولهذا أنشأنا باقات مرنة
+          لتلبية احتياجاتك التسويقية سواء كنت في بداية الطريق أو تسعى للنمو والريادة.
+        </p>
+      </div>
+
+      <!-- الصورة (شمال) -->
+      <div class="col-lg-6 text-center mb-4 mb-lg-0 position-relative order-2 order-lg-2">
+        <img src="Images/premium.png" 
+             class="img-fluid position-relative platform-img" 
+             alt="خطط سابِق" 
+             style="z-index: 2;">
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- CSS -->
+<style>
+  .platform-title {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 100%;
+    letter-spacing: 0;
+    color: #FAAF43;
+  }
+
+  .platform-subtitle {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 36px;
+    letter-spacing: 0;
+    color: #747582;
+  }
+
+  .platform-img {
+    width: 526px;
+    height: 560px;
+    max-width: 100%; /* ريسبونسف */
+    height: auto;    /* يحافظ على النسبة */
+  }
+
+  /* إظهار الخلفية في الموبايل والتابلت */
+  @media (max-width: 768px) {
+    .plans-bg {
+      display: block !important;
+      max-height: 400px !important;
+    }
+
+    .platform-img {
+      max-height: 350px !important;
+    }
+  }
+
+  @media (max-width: 992px) and (min-width: 769px) {
+    .plans-bg {
+      display: block !important;
+    }
+  }
+</style>
+
+<!-- ✅ Modal Custom Plan -->
+<div class="modal fade" id="customPlanModal" tabindex="-1" aria-hidden="true">
+<div class="modal-dialog modal-dialog-centered" style="max-width:500px;"> <!-- أقصى عرض 500px -->
+
+    <div class="modal-content rounded-4 shadow-lg p-3 p-md-4" dir="rtl" style="text-align:right;">
+      <div class="d-flex justify-content-between align-items-center mb-3">
+        <h4 class="fw-bold mb-0">الخطة المخصصة</h4>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="إغلاق"></button>
+      </div>
+
+      <!-- Indicators -->
+      <div class="d-flex align-items-center mb-4">
+        <div id="step1Indicator" class="rounded-circle bg-warning text-white fw-bold d-flex align-items-center justify-content-center" style="width:30px;height:30px;">1</div>
+        <div class="flex-grow-1 border-top mx-2" style="border-top:2px dashed #e0e0e0;"></div>
+        <div id="step2Indicator" class="rounded-circle bg-light text-dark fw-bold d-flex align-items-center justify-content-center" style="width:30px;height:30px;">2</div>
+      </div>
+
+      <!-- Status -->
+      <div id="formStatus" class="alert d-none" role="alert"></div>
+
+      <form id="multiStepForm" action="https://formspree.io/f/xkgvqbow" method="POST" novalidate>
+        <input type="hidden" name="_subject" value="طلب خطة مخصصة - SABEQ">
+        <input type="hidden" name="_template" value="table">
+
+        <!-- STEP 1 -->
+        <div id="step-1">
+          <div class="mb-3">
+            <label for="brandInput" class="form-label">اسم البراند</label>
+            <input type="text" class="form-control" id="brandInput" name="brand" placeholder="اكتب اسم البراند" required>
+          </div>
+
+          <div class="mb-3">
+            <label class="form-label d-block">عدد البلوجرز</label>
+            <div class="row g-2 text-center">
+              <div class="col-12 col-md-4 mb-2">
+                <label class="form-label fw-semibold">ضيافة</label>
+                <input type="number" class="form-control" name="hospitalityNumber" placeholder="0" min="0" required>
+              </div>
+              <div class="col-12 col-md-4 mb-2">
+                <label class="form-label fw-semibold">مدفوع 300</label>
+                <input type="number" class="form-control" name="paid300Number" placeholder="0" min="0" required>
+              </div>
+              <div class="col-12 col-md-4 mb-2">
+                <label class="form-label fw-semibold">مدفوع 1000+</label>
+                <input type="number" class="form-control" name="paid1000Number" placeholder="0" min="0" required>
+              </div>
+            </div>
+          </div>
+
+          <button type="button" class="wavy-btn w-100" id="nextBtn">
+            <div class="text">التالي</div>
+            <div class="wave"></div>
+          </button>
+        </div>
+
+        <!-- STEP 2 -->
+        <div id="step-2" class="d-none">
+          <div class="row g-2">
+            <div class="col-12 col-md-6 mb-2">
+              <label class="form-label">الاسم بالكامل</label>
+              <input type="text" class="form-control" name="fullName" placeholder="اكتب اسمك" required>
+            </div>
+            <div class="col-12 col-md-6 mb-2">
+              <label class="form-label">رقم الهاتف</label>
+              <input type="tel" class="form-control" name="phone" placeholder="اكتب رقم هاتفك" required>
+            </div>
+          </div>
+
+          <div class="mb-3">
+            <label class="form-label">البريد الإلكتروني</label>
+            <input type="email" class="form-control" name="email" placeholder="اكتب بريدك الإلكتروني" required>
+          </div>
+
+          <div class="mb-3">
+            <label class="form-label">الرسالة</label>
+            <textarea class="form-control" name="message" rows="3" placeholder="اكتب رسالتك..." required></textarea>
+          </div>
+
+          <div class="d-flex flex-column flex-md-row gap-2">
+            <button type="button" class="wavy-btn w-100 w-md-25" id="backBtn">
+              <div class="text">رجوع</div>
+              <div class="wave"></div>
+            </button>
+
+            <button type="submit" class="wavy-btn w-100 w-md-75" id="submitBtn">
+              <div class="text">إرسال الرسالة</div>
+              <div class="wave"></div>
+            </button>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+
+<script>
+const nextBtn = document.getElementById("nextBtn");
+const backBtn = document.getElementById("backBtn");
+const step1 = document.getElementById("step-1");
+const step2 = document.getElementById("step-2");
+const step1Indicator = document.getElementById("step1Indicator");
+const step2Indicator = document.getElementById("step2Indicator");
+const form = document.getElementById("multiStepForm");
+const formStatus = document.getElementById("formStatus");
+const submitBtn = document.getElementById("submitBtn");
+
+// منع الفورم يترسل بالـ Enter
+form.addEventListener("keydown", e => {
+  if (e.key === "Enter" && e.target.tagName !== "TEXTAREA") e.preventDefault();
+});
+
+function validateStep1() {
+  const fields = step1.querySelectorAll("input[required]");
+  for (const el of fields) {
+    if (!el.value) { el.reportValidity(); return false; }
+  }
+  return true;
+}
+
+nextBtn?.addEventListener("click", () => {
+  if (!validateStep1()) return;
+  step1.classList.add("d-none");
+  step2.classList.remove("d-none");
+  step1Indicator.classList.replace("bg-warning","bg-light");
+  step1Indicator.classList.add("text-dark");
+  step2Indicator.classList.replace("bg-light","bg-warning");
+  step2Indicator.classList.add("text-white");
+});
+
+backBtn?.addEventListener("click", () => {
+  step2.classList.add("d-none");
+  step1.classList.remove("d-none");
+  step2Indicator.classList.replace("bg-warning","bg-light");
+  step2Indicator.classList.remove("text-white");
+  step1Indicator.classList.replace("bg-light","bg-warning");
+  step1Indicator.classList.remove("text-dark");
+  formStatus.classList.add("d-none");
+});
+
+form.addEventListener("submit", async e => {
+  e.preventDefault();
+  formStatus.className = "alert d-none";
+  submitBtn.disabled = true;
+  const originalText = submitBtn.textContent;
+  submitBtn.textContent = "جارٍ الإرسال...";
+
+  try {
+    const resp = await fetch(form.action, {
+      method: "POST",
+      headers: { "Accept": "application/json" },
+      body: new FormData(form)
+    });
+
+    if (resp.ok) {
+      form.reset();
+      backBtn?.click();
+      formStatus.className = "alert alert-success";
+      formStatus.textContent = "✅ شكرًا! تم إرسال رسالتك بنجاح وسنتواصل معك قريبًا.";
+      formStatus.classList.remove("d-none");
+    } else {
+      let msg = "حدث خطأ أثناء إرسال الرسالة.";
+      try {
+        const data = await resp.json();
+        if (data && data.errors) msg = data.errors.map(e => e.message).join(", ");
+      } catch(_) {}
+      formStatus.className = "alert alert-danger";
+      formStatus.textContent = msg + " يرجى المحاولة مرة أخرى.";
+      formStatus.classList.remove("d-none");
+    }
+  } catch (err) {
+    formStatus.className = "alert alert-danger";
+    formStatus.textContent = "خطأ في الشبكة. تأكد من اتصالك وحاول مرة أخرى.";
+      formStatus.classList.remove("d-none");
+  } finally {
+    submitBtn.disabled = false;
+    submitBtn.textContent = originalText;
+  }
+});
+</script>
+
+
+
+<!-- ✅ قسم الباقات -->
+<section id="plan" style="padding: 80px 0; font-family: Ubuntu, sans-serif;" dir="rtl">
+
+  <div class="container">
+
+    <!-- العناوين -->
+    <div class="text-center mb-5">
+      <h2 class="pricing-title">خطط الأسعار لدينا</h2>
+      <p class="pricing-subtitle" style="max-width: 700px; margin: auto;">
+        اختر الخطة التي تناسب مشروعك، و صمّم مسارك التسويقي بما يتناسب مع احتياجات مشروع.
+      </p>
+    </div>
+
+    <div class="row g-4">
+
+      <style>
+        /* =============================== */
+        /*      Hover Lift for Cards       */
+        /* =============================== */
+        .package-col {
+          transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .package-col:hover {
+          transform: translateY(-10px);
+          box-shadow: 0 15px 30px rgba(0,0,0,0.15);
+          z-index: 2;
+        }
+        .check-icon {
+          transition: transform 0.3s ease;
+        }
+        .package-col:hover .check-icon {
+          transform: scale(1.2);
+        }
+      </style>
+
+    </div>
+  </div>
+</section>
+<body class="bg-light" dir="rtl">
+
+<div class="container py-5">
+  <div class="row g-4">
+
+    <!-- تجربة -->
+    <div class="col-md-6 col-lg-3 d-flex flex-column package-col">
+      <div class="card shadow border-0 rounded-3 text-center mb-3 custom-card">
+        <div class="card-body">
+          <small class="text-uppercase fw-semibold text-secondary d-block mb-2">باقة التجربة 🌟</small>
+          <h2 class="fw-bold text-primary mb-3">3,000 ر.س</h2>
+          <div class="text-center">
+            <button class="pay-now-btn btn btn-outline-primary" data-package="trial">
+              ادفع الآن <i class="bi bi-arrow-left"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="bg-white p-3 rounded-4 flex-fill h-100">
+        <ul class="list-unstyled feature-list mb-0">
+          <li class="d-flex align-items-center mb-2">
+            <i class="bi bi-check-circle-fill text-primary ms-2 check-icon"></i>
+            30 مؤثر (ضيافة فقط)
+          </li>
+          <li class="d-flex align-items-center mb-2">
+            <i class="bi bi-check-circle-fill text-primary ms-2 check-icon"></i>
+            رسوم التنسيق: مشمولة
+          </li>
+          <li class="d-flex align-items-center">
+            <i class="bi bi-check-circle-fill text-primary ms-2 check-icon"></i>
+            الضيافة: جميع الـ 30 مؤثر مشمولة
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- فضية -->
+    <div class="col-md-6 col-lg-3 d-flex flex-column package-col">
+      <div class="card shadow border-0 rounded-3 text-center mb-3 custom-card">
+        <div class="card-body">
+          <small class="text-uppercase fw-semibold text-secondary d-block mb-2">الباقة الفضية 🎖</small>
+          <h2 class="fw-bold text-primary mb-3">6,000 ر.س</h2>
+          <div class="text-center">
+            <button class="pay-now-btn btn btn-outline-primary" data-package="silver">
+              ادفع الآن <i class="bi bi-arrow-left"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="bg-white p-3 rounded-4 flex-fill h-100">
+        <ul class="list-unstyled feature-list mb-0">
+          <li class="d-flex align-items-center mb-2">
+            <i class="bi bi-check-circle-fill text-primary ms-2 check-icon"></i>
+            30 مؤثر
+          </li>
+          <li class="d-flex align-items-center mb-2">
+            <i class="bi bi-check-circle-fill text-primary ms-2 check-icon"></i>
+            20 ضيافة + 10 مدفوع (300 ر.س لكل واحد)
+          </li>
+          <li class="d-flex align-items-center">
+            <i class="bi bi-check-circle-fill text-primary ms-2 check-icon"></i>
+            رسوم التنسيق: 3,000 ر.س
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- ذهبية -->
+    <div class="col-md-6 col-lg-3 d-flex flex-column package-col">
+      <div class="card shadow border-0 rounded-3 text-center mb-3 custom-card">
+        <div class="card-body">
+          <small class="text-uppercase fw-semibold text-secondary d-block mb-2">الباقة الذهبية 🥇</small>
+          <h2 class="fw-bold text-primary mb-3">10,500 ر.س</h2>
+          <div class="text-center">
+            <button class="pay-now-btn btn btn-outline-primary" data-package="gold">
+              ادفع الآن <i class="bi bi-arrow-left"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="bg-white p-3 rounded-4 flex-fill h-100">
+        <ul class="list-unstyled feature-list mb-0">
+          <li class="d-flex align-items-center mb-2">
+            <i class="bi bi-check-circle-fill text-primary ms-2 check-icon"></i>
+            31 مؤثر
+          </li>
+          <li class="d-flex align-items-center mb-2">
+            <i class="bi bi-check-circle-fill text-primary ms-2 check-icon"></i>
+            15 ضيافة + 15 مدفوع (300 ر.س لكل واحد)
+          </li>
+          <li class="d-flex align-items-center mb-2">
+            <i class="bi bi-check-circle-fill text-primary ms-2 check-icon"></i>
+            مؤثر قوي واحد (بقيمة 2,500 ر.س)
+          </li>
+          <li class="d-flex align-items-center mb-2">
+            <i class="bi bi-check-circle-fill text-primary ms-2 check-icon"></i>
+            رسوم التنسيق: 3,500 ر.س
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- ماسية -->
+    <div class="col-md-6 col-lg-3 d-flex flex-column package-col">
+      <div class="card shadow border-0 rounded-3 text-center mb-3 text-white custom-card" style="background: linear-gradient(105deg, #29ABE2, #FAAF43);">
+        <div class="card-body">
+          <small class="text-uppercase fw-semibold d-block mb-2 d-flex justify-content-center align-items-center gap-2">
+            <i class="bi bi-gem"></i> الباقة الماسية 💎
+          </small>
+          <h2 class="fw-bold mb-3">15,500 ر.س</h2>
+          <div class="text-center">
+            <button class="pay-now-btn btn btn-light text-dark" data-package="diamond">
+              ادفع الآن <i class="bi bi-arrow-left"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="bg-white p-3 rounded-4 flex-fill h-100">
+        <ul class="list-unstyled feature-list mb-0">
+          <li class="d-flex align-items-center mb-2">
+            <i class="bi bi-check-circle-fill text-primary ms-2 check-icon"></i>
+            37 مؤثر
+          </li>
+          <li class="d-flex align-items-center mb-2">
+            <i class="bi bi-check-circle-fill text-primary ms-2 check-icon"></i>
+            15 ضيافة + 20 مدفوع (300 ر.س لكل واحد)
+          </li>
+          <li class="d-flex align-items-center mb-2">
+            <i class="bi bi-check-circle-fill text-primary ms-2 check-icon"></i>
+            2 مؤثرين أقوياء (بقيمة 2,500 ر.س لكل واحد)
+          </li>
+          <li class="d-flex align-items-center mb-2">
+            <i class="bi bi-check-circle-fill text-primary ms-2 check-icon"></i>
+            رسوم التنسيق: 4,500 ر.س
+          </li>
+        </ul>
+      </div>
+    </div>
+
+  </div>
+</div>
+</body>
+<!-- ✅ زرار كاستم بلان -->
+<div class="text-center mt-5">
+  <button class="btn btn-lg custom-plan-btn px-5 rounded-pill shadow-sm"
+          data-bs-toggle="modal" data-bs-target="#customPlanModal">
+    <i class="bi bi-bullseye"></i> انشىء باقتك الخاصة
+  </button>
+</div>
+
+<!-- 🎨 CSS -->
+<style>
+.custom-plan-btn {
+  background: linear-gradient(90deg, #007bff, #6f42c1);
+  color: #fff;
+  font-size: 1.5rem;
+  padding: 18px 50px;
+  border: none;
+  border-radius: 50px;
+  transition: all 0.3s ease-in-out;
+  animation: pulseGlow 3s infinite;
+  box-shadow: 0 0 15px rgba(0, 123, 255, 0.6);
+}
+
+/* ✨ Hover effect */
+.custom-plan-btn:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 30px rgba(111, 66, 193, 0.9), 0 0 60px rgba(0, 123, 255, 0.7);
+  background: linear-gradient(90deg, #6f42c1, #007bff);
+}
+
+/* ✨ Multi-color pulse */
+@keyframes pulseGlow {
+  0% {
+    transform: scale(1);
+    box-shadow: 0 0 15px rgba(0, 123, 255, 0.6);
+  }
+  25% {
+    transform: scale(1.05);
+    box-shadow: 0 0 25px rgba(111, 66, 193, 0.8), 0 0 50px rgba(0, 123, 255, 0.5);
+  }
+  50% {
+    transform: scale(1.08);
+    box-shadow: 0 0 35px rgba(0, 123, 255, 0.9), 0 0 70px rgba(111, 66, 193, 0.6);
+  }
+  75% {
+    transform: scale(1.05);
+    box-shadow: 0 0 25px rgba(111, 66, 193, 0.8), 0 0 50px rgba(0, 123, 255, 0.5);
+  }
+  100% {
+    transform: scale(1);
+    box-shadow: 0 0 15px rgba(0, 123, 255, 0.6);
+  }
+}
+</style>
+
+</section>
+
+<!-- CSS -->
+<style>
+  .pricing-title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 53px;
+    letter-spacing: 2%;
+    text-align: center;
+    color: #282C4B;
+  }
+
+ .custom-card {
+  min-height: 300px; 
+}
+.custom-card .card-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;    
+  height: 100%;
+}
+@media (max-width: 1000px) {
+  .custom-card {
+    min-height: 220px; 
+  }
+}
+
+  .pricing-subtitle {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 32px;
+    text-align: center;
+    color: #747582;
+  }
+
+  /* ✅ زرار موحد */
+  .pay-now-btn {
+    width: 216px;
+    height: 44px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+
+    background-color: #29ABE2;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 600;
+
+    border-radius: 192px;
+    border: 2px solid #FFFFFFCC;
+
+    padding: 8px 24px;
+
+    box-shadow: 0px 30px 50px 0px #29ABE226;
+    opacity: 1;
+
+    transition: all 0.3s ease;
+  }
+
+  .pay-now-btn:hover {
+    background-color: #218bbd;
+    box-shadow: 0px 20px 40px 0px #29ABE240;
+  }
+
+  .pay-now-btn i {
+    font-size: 16px;
+  }
+
+  /* ✅ تكبير الأيقونة */
+  .check-icon {
+    font-size: 20px;
+  }
+
+  /* ✅ استايل النصوص تحت الكروت */
+  .feature-list li {
+    font-family: Ubuntu, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 16px;
+    line-height: 115%;
+    letter-spacing: 0;
+    color: #6F6C8F;
+  }
+
+  /* ✅ اتجاه RTL */
+  [dir="rtl"] .pay-now-btn i {
+    transform: rotate(180deg); /* يعكس السهم */
+  }
+</style>
+
+<!-- Tap Payments -->
+<script src="https://secure.gosell.io/js/sdk/tap.min.js"></script>
+<script>
+  const TAP_PUBLIC_KEY = "pk_test_7fuE6g9nGcpwjQv5boaYI3FA";
+
+  document.querySelectorAll(".pay-now-btn").forEach(button => {
+    button.addEventListener("click", async () => {
+      const packageType = button.getAttribute("data-package");
+
+      try {
+        const response = await fetch("http://localhost:3000/create-checkout-session", {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({ packageType })
+        });
+
+        const session = await response.json();
+
+        if (session.transaction && session.transaction.url) {
+          const tap = Tap(TAP_PUBLIC_KEY);
+          tap.checkout({
+            session: session.transaction,
+            onSuccess: (res) => {
+              console.log("تم الدفع بنجاح:", res);
+              window.location.href = "/success";
+            },
+            onError: (err) => {
+              console.error("خطأ في الدفع:", err);
+              alert("فشل الدفع. حاول مرة أخرى.");
+            }
+          });
+        } else {
+          alert("فشل إنشاء جلسة الدفع. حاول مرة أخرى.");
+          console.error("Response Error:", session);
+        }
+      } catch (error) {
+        alert("خطأ في الاتصال. تحقق من الإنترنت أو حاول لاحقاً.");
+        console.error("Fetch Error:", error);
+      }
+    });
+  });
+</script>
+
+<div class="container mt-5" id="contact">
+  <div class="row align-items-center">
+    
+    <!-- الصورة على اليمين -->
+    <div class="col-md-5 text-center mb-4 mb-md-0 position-relative order-md-2">
+      <img src="Images/Group9146.png" 
+           alt="شكل خلفي" 
+           class="img-fluid position-absolute top-50 start-50 translate-middle contact-bg" 
+           style="max-height: 500px; z-index: 1; opacity: 0.9;">
+      <img src="Images/Marketing.png" 
+           class="img-fluid position-relative contact-img" 
+           alt="صورة للتواصل معنا" 
+           style="max-height: 420px; z-index: 2;">
+    </div>
+
+    <!-- الفورم على الشمال -->
+    <div class="col-md-7 order-md-1">
+      
+   <!-- العنوان الرئيسي -->
+      <h2 class="contact-title">
+         هيا بنا لنتعاون الان!
+      </h2>
+      
+      <!-- وصف -->
+      <p class="contact-desc mb-4">
+   يسعدنا ان نتواصل! املا الفورم بالاسفل وفريقنا سوف يتواصل معكم في اقرب وقت .
+   </p>
+
+      <form action="https://formspree.io/f/xkgvqbow" method="POST">
+
+        <!-- الاسم الكامل -->
+        <div class="mb-3">
+          <label for="fullName" class="form-label label-text">الاسم الكامل</label>
+          <input type="text" class="form-control input-long" id="fullName" name="fullName" placeholder="ادخل اسمك" required>
+        </div>
+        
+        <!-- الايميل + التاريخ -->
+        <div class="row g-3">
+          <div class="col-md-6">
+            <label for="emailAddress" class="form-label label-text">البريد الإلكتروني</label>
+            <input type="email" class="form-control input-half" id="emailAddress" name="emailAddress" placeholder="ادخل بريدك" required>
+          </div>
+
+          <div class="col-md-6">
+            <label for="date" class="form-label label-text">التاريخ</label>
+            <div class="position-relative">
+              <input type="date" class="form-control input-half ps-5 custom-date" id="date" name="date">
+              <span class="position-absolute top-50 start-0 translate-middle-y ps-2" style="cursor: pointer;" onclick="document.getElementById('date').showPicker()">
+                <img src="Images/Calendar.png" alt="تقويم" style="width:20px; height:20px;">
+              </span>
+            </div>
+          </div>
+        </div>
+
+        <!-- البراند -->
+        <div class="mb-3">
+          <label for="brandName" class="form-label label-text"> البراند الخاص بك</label>
+          <input type="text" class="form-control input-long" id="brandName" name="brandName" placeholder="ادخل اسم البراند">
+        </div>
+        
+        <!-- الرسالة -->
+        <div class="mb-3">
+          <label for="message" class="form-label label-text">الرسالة</label>
+          <textarea class="form-control input-long ps-3" id="message" name="message" rows="4" placeholder="اكتب رسالتك هنا" required></textarea>
+        </div>
+        
+        <!-- الزرار -->
+        <div class="text-center">
+          <button type="submit" class="btn submit-btn">
+            <span class="btn-text">إرسال الرسالة</span>
+          </button>
+        </div>
+
+      </form>
+    </div>
+  </div>
+</div>
+
+<br><br>
+<hr>
+
+<!-- CSS -->
+<style>
+  /* النص البرتقالي الصغير */
+  .contact-small {
+    font-family: Ubuntu, sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    color: #FAAF43;
+    text-transform: uppercase;
+  }
+
+  /* العنوان الرئيسي */
+  .contact-title {
+    font-family: Ubuntu, sans-serif;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 53px;
+    letter-spacing: 2%;
+    color: #282C4B;
+  }
+
+  /* الوصف */
+  .contact-desc {
+    font-family: Ubuntu, sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 28px;
+    color: #14142B;
+  }
+
+  /* اللابلز */
+  .label-text {
+    font-family: Ubuntu, sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 32px;
+    color: #14183E;
+  }
+
+  /* البوكسات */
+  .input-long,
+  .input-half {
+    width: 100%;
+    height: 58px;
+    background-color: #29ABE20D;
+    border: none;
+    border-radius: 10px;
+    font-family: Ubuntu, sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 100%;
+    color: #747582;
+    padding-left: 15px;
+    box-sizing: border-box;
+  }
+
+  .input-long::placeholder,
+  .input-half::placeholder {
+    font-family: Ubuntu, sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 100%;
+    color: #747582;
+    opacity: 1;
+  }
+
+  textarea.input-long {
+    height: auto;
+    padding-top: 10px;
+  }
+
+  /* شيل أيقونة الـ default من input date */
+  input[type="date"]::-webkit-calendar-picker-indicator {
+    opacity: 0;
+    cursor: pointer;
+  }
+
+  /* زرار */
+  .submit-btn {
+    width: 210px;
+    height: 68px;
+    border-radius: 192px;
+    background: #29ABE2;
+    border: 2px solid #FFFFFFCC;
+    box-shadow: 0px 30px 50px 0px #29ABE226;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+    margin: 0 auto;
+  }
+
+  .submit-btn:hover {
+    background: #1f94c7;
+  }
+
+  .btn-text {
+    width: 127px;
+    height: 21px;
+    font-family: Ubuntu, sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 100%;
+    letter-spacing: 2%;
+    color: #FFFFFF;
+    text-align: center;
+  }
+
+  /* إظهار الخلفية في الموبايل والتابلت */
+  @media (max-width: 768px) {
+    #contact {
+      margin-top: 30px;
+    }
+    
+    .contact-title {
+      font-size: 28px;
+      line-height: 40px;
+      text-align: center;
+    }
+    
+    .contact-small, 
+    .contact-desc {
+      text-align: center;
+    }
+    
+    .contact-desc {
+      font-size: 14px;
+    }
+    
+    .contact-img {
+      max-height: 300px !important;
+      margin-bottom: 30px;
+    }
+    
+    .label-text {
+      font-size: 16px;
+    }
+    
+    .input-long,
+    .input-half {
+      height: 50px;
+      font-size: 14px;
+    }
+    
+    .submit-btn {
+      width: 180px;
+      height: 60px;
+    }
+    
+    .btn-text {
+      font-size: 16px;
+    }
+    
+    /* إظهار الخلفية في الموبايل */
+    .contact-bg {
+      display: block !important;
+      max-height: 400px !important;
+    }
+  }
+  
+  /* إظهار الخلفية في التابلت */
+  @media (max-width: 992px) and (min-width: 769px) {
+    .contact-bg {
+      display: block !important;
+    }
+  }
+</style>
+<!-- Footer -->
+<footer class="pt-4" style="background-color: #282c4b; color: white; direction: rtl; text-align: right;">
+  <div class="container">
+    <br>
+    <div class="row align-items-center">
+      <!-- يمين -->
+      <div class="col-md-6 mb-3 mb-md-0">
+        <h4 class="fw-bold mb-1">
+          <img src="Images/LogoMarkPNG.png" alt="اللوجو" style="width:40px; height:auto;">
+        </h4>
+        <p class="mb-0">نبتكر حلولًا تسويقية تتجاوز التوقعات.</p>
+      </div>
+
+      <!-- شمال -->
+      <div class="col-md-6 text-md-start">
+        <p class="mb-1">
+          <i class="bi bi-envelope-fill ms-2"></i>info@sabeq-sa.com
+        </p>
+        <p class="mb-0">
+          <i class="bi bi-telephone-fill ms-2"></i>0537993036
+        </p>
+      </div>
+    </div>
+
+    <!-- روابط + علم + سوشيال -->
+    <hr class="border-light">
+    <div class="row align-items-center text-center mb-3">
+      
+      <!-- علم -->
+      <div class="col-12 col-md-4 mb-2 mb-md-0 text-md-end">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/0/0d/Flag_of_Saudi_Arabia.svg" 
+             alt="علم السعودية" 
+             class="saudi-flag">
+      </div>
+
+      <!-- روابط -->
+      <div class="col-12 col-md-4 mb-2 mb-md-0">
+        <ul class="list-inline mb-0">
+          <li class="list-inline-item mx-2"><a href="homear.html" class="text-white text-decoration-none">الرئيسية</a></li>
+          <li class="list-inline-item mx-2"><a href="aboutusar.html" class="text-white text-decoration-none">من نحن</a></li>
+          <li class="list-inline-item mx-2"><a href="Contactusar.html" class="text-white text-decoration-none">تواصل معنا</a></li>
+        </ul>
+      </div>
+
+      <!-- سوشيال -->
+      <div class="col-12 col-md-4 text-md-start">
+        <a href="https://www.tiktok.com/@sabeq_official" target="_blank" class="social-frame ms-2">
+          <i class="bi bi-tiktok small-icon"></i>
+        </a>
+        <a href="https://www.instagram.com/sabeq_official" target="_blank" class="social-frame">
+          <i class="bi bi-instagram small-icon"></i>
+        </a>
+      </div>
+    </div>
+
+    <!-- حقوق النشر -->
+    <div class="text-center mt-3" style="font-size: 0.85rem; color: #ccc; padding-right: 30px;">
+  <p class="mb-1">© 2025 سابق. جميع الحقوق محفوظة.</p>
+  <p class="mb-1">الرقم الضريبي: 312811302900003</p>
+  <p class="mb-1">السجل التجاري: 7035659916 | تاريخ التسجيل: 04/08/2025</p>
+</div>
+
+  </div>
+  <br>
+</footer>
+
+<!-- CSS -->
+<style>
+  .small-icon {
+    font-size: 0.9rem; 
+    transition: transform 0.3s ease, color 0.3s ease;
+  }
+
+  .social-frame {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%; 
+    background-color: rgba(255, 255, 255, 0.08);
+    color: white;
+    text-decoration: none;
+    transition: background 0.3s ease, transform 0.3s ease;
+  }
+
+  .social-frame:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    transform: scale(1.1);
+  }
+
+  .saudi-flag {
+    width: 32px;
+    height: 32px;
+    object-fit: contain;
+    border-radius: 4px;
+    transition: transform 0.3s ease;
+  }
+
+  .saudi-flag:hover {
+    transform: scale(1.1);
+  }
+</style>
+
+<script src="bootstrap.bundle.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,718 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <link rel="stylesheet" href="bootstrap.min.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" />
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap" rel="stylesheet">
+
+  <title>تواصل معنا - سابق</title>
+  <meta name="description" content="تواصل مع سابق اليوم. اتصل بنا للحصول على حلول تسويقية، شراكات، وخطط مخصصة لتنمية عملك.">
+
+  <!-- أيقونة الموقع -->
+  <link rel="icon" href="Images/LogoMarkPNG.png" type="image/png" />
+  
+  <style>
+    /* زر اللغة */
+    .lang-btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 90px;
+      height: 55px;
+      border: 1px solid #FAAF4380;
+      background: #FFFFFF;
+      border-radius: 80px;
+      font-family: 'Ubuntu', sans-serif;
+      font-weight: 700;
+      font-size: 14px;
+      line-height: 100%;
+      color: #282C4B;
+      text-decoration: none;
+      transition: all 0.3s ease;
+    }
+
+    .lang-btn:hover,
+    .lang-btn:focus {
+      background: #FAAF43;
+      color: #fff;
+    }
+
+    /* navbar */
+    .navbar {
+      transition: all 0.3s ease;
+      padding: 20px 0;
+    }
+
+    .navbar.shrink {
+      padding: 5px 0;
+    }
+
+    .navbar img {
+      transition: all 0.3s ease;
+    }
+
+    .navbar.shrink img {
+      width: 100px !important;
+      height: 60px !important;
+      transition: all 0.3s ease;
+    }
+    
+    /* تنسيقات النموذج - تم زيادة المسافة هنا */
+    .brand-radio {
+      appearance: none;
+      -webkit-appearance: none;
+      width: 28px;
+      height: 28px;
+      border: none;
+      border-radius: 50%;
+      background: #29ABE20D;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      margin-left: 15px; /* زيادة المسافة من 8px إلى 15px */
+      margin-right: 0;
+    }
+
+    .brand-radio:hover {
+      box-shadow: 0 0 0 2px #29ABE2;
+    }
+    
+    .form-check {
+      display: flex;
+      align-items: center;
+      gap: 30px;
+      padding-right: 10px; /* إضافة مسافة إضافية من اليمين */
+    }
+    
+    .brand-radio:checked {
+      background: #29ABE20D;
+      border: 2px solid #29ABE2;
+    }
+
+    .brand-radio:checked::after {
+      content: "";
+      width: 12px;
+      height: 10px;
+      background: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='12' height='10' viewBox='0 0 12 10' fill='none'><path d='M1 5L4.5 8.5L11 1.5' stroke='%2329ABE2' stroke-width='2.5' stroke-linecap='round' stroke-linejoin='round'/></svg>") no-repeat center center;
+      background-size: contain;
+      display: block;
+    }
+
+    .form-check-label {
+      font-family: 'Ubuntu', sans-serif;
+      font-weight: 500;
+      font-size: 16px;
+      color: #282C4B;
+      padding-left: 5px; /* إضافة مسافة إضافية من اليسار */
+    }
+    
+    /* تنسيقات الفوتر */
+    .small-icon {
+      font-size: 0.9rem; 
+      transition: transform 0.3s ease, color 0.3s ease, background 0.3s ease;
+    }
+
+    .social-frame {
+      display: inline-flex;
+      justify-content: center;
+      align-items: center;
+      width: 32px;
+      height: 32px;
+      border-radius: 50%; 
+      background-color: rgba(255, 255, 255, 0.08);
+      color: white;
+      text-decoration: none;
+      transition: background 0.3s ease, transform 0.3s ease;
+    }
+
+    .social-frame:hover {
+      background-color: rgba(255, 255, 255, 0.2);
+      transform: scale(1.1);
+    }
+
+    .social-frame:hover .bi-tiktok {
+      color: #000;
+    }
+
+    .social-frame:hover .bi-instagram {
+      background: linear-gradient(45deg, #feda75, #fa7e1e, #d62976, #962fbf, #4f5bd5);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    /* علم السعودية */
+    .saudi-flag {
+      width: 32px;
+      height: 32px;
+      object-fit: contain;
+      border-radius: 4px;
+      transition: transform 0.3s ease;
+    }
+
+    .saudi-flag:hover {
+      transform: scale(1.1);
+    }
+    
+    /* تنسيقات متجاوبة */
+    @media (max-width: 767px) {
+      .footer-links .col-4 {
+        flex: 0 0 100%;
+        max-width: 100%;
+        margin-bottom: 15px;
+        text-align: center !important;
+      }
+      
+      .navbar-brand img {
+        width: 120px !important;
+        height: 70px !important;
+      }
+      
+      .navbar.shrink img {
+        width: 80px !important;
+        height: 50px !important;
+      }
+      
+      .nav-link {
+        font-size: 14px;
+        margin: 5px 0 !important;
+        text-align: center;
+      }
+      
+      .navbar-collapse {
+        text-align: center;
+      }
+      
+      .contact-form-container {
+        padding: 30px 20px !important;
+      }
+      
+      .contact-info {
+        flex-direction: column;
+        gap: 15px !important;
+      }
+      
+      .input-container {
+        width: 100% !important;
+        height: auto !important;
+        margin-bottom: 20px;
+      }
+      
+      .section-title {
+        font-size: 36px !important;
+        line-height: 50px !important;
+        text-align: center;
+      }
+      
+      .section-description {
+        font-size: 18px !important;
+        line-height: 30px !important;
+        text-align: center;
+      }
+      
+      /* تحسينات للهواتف - نموذج التواصل */
+      .contact-form-container {
+        margin: 20px 10px !important;
+        padding: 25px 15px !important;
+      }
+      
+      .input-container {
+        height: 120px !important;
+        padding: 15px !important;
+      }
+      
+      .form-check {
+        gap: 15px !important;
+        margin-bottom: 10px;
+        padding-right: 5px; /* تقليل المسافة في الهواتف */
+      }
+      
+      .brand-radio {
+        margin-left: 12px; /* تقليل المسافة في الهواتف */
+        width: 24px;
+        height: 24px;
+      }
+      
+      /* زر الإرسال في الهواتف */
+      .submit-btn {
+        width: 180px !important;
+        height: 60px !important;
+        font-size: 16px !important;
+      }
+    }
+    
+    @media (max-width: 991px) {
+      .navbar-collapse {
+        text-align: center;
+      }
+      
+      .nav-item {
+        margin: 5px 0;
+      }
+      
+      .section-title {
+        font-size: 42px !important;
+        line-height: 60px !important;
+        text-align: center;
+      }
+      
+      .section-description {
+        text-align: center;
+      }
+    }
+    
+    @media (max-width: 576px) {
+      .section-title {
+        font-size: 32px !important;
+        line-height: 45px !important;
+      }
+      
+      .section-description {
+        font-size: 16px !important;
+        line-height: 26px !important;
+      }
+      
+      .contact-img {
+        max-width: 90% !important;
+        margin-top: 20px;
+      }
+      
+      .contact-info {
+        flex-direction: column;
+        gap: 20px !important;
+        text-align: center;
+      }
+      
+      .contact-form-container {
+        padding: 20px 15px !important;
+        border-radius: 15px !important;
+      }
+      
+      .input-container {
+        height: 110px !important;
+        padding: 15px !important;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+<!-- شريط التنقل -->
+<nav class="navbar navbar-expand-lg bg-light navbar-light fixed-top">
+  <div class="container">
+
+    <!-- اللوجو -->
+    <a class="navbar-brand" href="homear.html">
+      <div style="display: flex; align-items: center; gap: 10px; flex-direction: row-reverse;">
+        <img src="Images/FullLogoPNG.png" alt="الشعار" style="width:150px; height:90px; object-fit:contain;">
+      </div>
+    </a>
+
+    <!-- زر الموبايل -->
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" 
+      data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" 
+      aria-expanded="false" aria-label="فتح القائمة">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!-- الروابط -->
+    <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
+      <ul class="navbar-nav mb-2 mb-lg-0">
+        <li class="nav-item"><a class="nav-link active mx-3" href="homear.html">الرئيسية</a></li>
+        <li class="nav-item"><a class="nav-link mx-3" href="aboutusar.html">من نحن</a></li>
+        <li class="nav-item"><a class="nav-link mx-3" href="plansar.html">الباقات</a></li>
+        <li class="nav-item"><a class="nav-link mx-3" href="contactusar.html"><b style="color:#007bff;">تواصل معنا </b></a></li>
+        <li class="nav-item"><a class="nav-link disabled mx-3">قريباً</a></li>
+
+        <!-- Dropdown لغة للموبايل -->
+        <li class="nav-item dropdown d-lg-none text-center mt-2">
+          <a class="lang-btn dropdown-toggle" href="#" id="mobileLang" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            العربية
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="mobileLang">
+            <li><a class="dropdown-item" href="ContactUs.html">English</a></li>
+            <li><a class="dropdown-item" href="ContactUsar.html">العربية</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+
+    <!-- Dropdown لغة للديسكتوب -->
+    <div class="d-none d-lg-block dropdown ms-auto">
+      <a class="lang-btn dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+        العربية
+      </a>
+      <ul class="dropdown-menu dropdown-menu-end">
+        <li><a class="dropdown-item" href="ContactUs.html">English</a></li>
+        <li><a class="dropdown-item" href="ContactUsar.html">العربية</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<script>
+  window.addEventListener("scroll", function() {
+    let navbar = document.querySelector(".navbar");
+    if (window.scrollY > 50) {
+      navbar.classList.add("shrink");
+    } else {
+      navbar.classList.remove("shrink");
+    }
+  });
+</script>
+
+<!-- قسم تواصل معنا -->
+<section class="py-5" 
+         style="background: linear-gradient(to top, #F3E7D9 0%, #ffffff 100%); font-family: Ubuntu, sans-serif; margin-top: 100px;" dir="rtl">
+  <div class="container">
+    <div class="row align-items-center">
+
+      <!-- النص -->
+      <div class="col-lg-6 mb-4 mb-lg-0" style="text-align:right;">
+
+        <!-- العنوان الرئيسي -->
+        <h1 class="section-title" style="font-weight:700; 
+           font-size:50px; 
+           line-height:80px; 
+           letter-spacing:2%;">
+          <span style="color: #29ABE2;">تواصل مع</span> ســابــق
+        </h1>
+
+        <!-- النص الوصفي -->
+        <p class="section-description" style="font-weight:400; 
+                  font-size:20px; 
+                  line-height:36px; 
+                  color:#747582;">
+          كل محادثة هي بداية لشراكة ناجحة.  
+          املأ بياناتك ودعنا نتواصل معك لمساعدتك في بناء حضور قوي لعلامتك التجارية.
+        </p>
+      </div>
+
+      <!-- الصورة -->
+      <div class="col-lg-6 text-center">
+        <img src="Images/contactus.png" 
+             class="img-fluid contact-img" 
+             alt="تواصل معنا - صورة توضيحية"
+             style="max-width:528px; height:auto;">
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<hr>
+<div class="container mt-5" id="contact">
+  <!-- معلومات التواصل فوق -->
+  <div class="d-flex flex-wrap justify-content-center align-items-center mb-5 text-center gap-5 contact-info" dir="rtl">
+    
+    <!-- الإيميل -->
+    <div class="d-flex align-items-center gap-2">
+      <i class="bi bi-envelope-fill text-info fs-5"></i>
+      <span><b>info@sabeq-sa.com</b></span>
+    </div>
+
+    <!-- رقم الهاتف -->
+    <div class="d-flex align-items-center gap-2">
+      <i class="bi bi-telephone-fill text-info fs-5"></i>
+      <span><b>0537993036</b></span>
+    </div>
+    
+  </div>
+</div>
+
+
+<!-- نموذج التواصل -->
+<div class="container mt-5" id="contact" dir="rtl">
+  <form action="https://formspree.io/f/xkgvqbow" method="POST" 
+        class="mx-auto contact-form-container"
+        style="max-width:848px; background:#fff; border-radius:20px; padding:60px; 
+               font-family:Ubuntu, sans-serif; 
+               box-shadow:-40px 100px 70px 0px #29ABE20D, 40px 0px 70px 0px #29ABE20D; 
+               text-align: right;">
+
+    <!-- الاسم الكامل + البريد -->
+    <div class="row g-3 mb-4 justify-content-center">
+
+      <!-- الاسم الكامل -->
+      <div class="col-md-6 d-flex justify-content-center">
+        <div class="input-container" style="width:349px; height:137px; 
+                    background:#FFFFFF; 
+                    border-radius:20px; 
+                    padding:20px;
+                    box-shadow:-40px 100px 70px 0px #29ABE20D, 
+                               40px 0px 70px 0px #29ABE20D;">
+          <label for="fullName" 
+                 style="font-weight:500; font-size:18px; line-height:150%; color:#000;">
+            الاسم الكامل
+          </label>
+          <input type="text" 
+                 id="fullName" 
+                 name="fullName" 
+                 placeholder="أدخل اسمك الكامل" 
+                 required
+                 class="form-control border-0 mt-2"
+                 style="font-size:16px; background:transparent; text-align:right;">
+        </div>
+      </div>
+
+      <!-- البريد الإلكتروني -->
+      <div class="col-md-6 d-flex justify-content-center">
+        <div class="input-container" style="width:349px; height:137px; 
+                    background:#FFFFFF; 
+                    border-radius:20px; 
+                    padding:20px;
+                    box-shadow:-40px 100px 70px 0px #29ABE20D, 
+                               40px 0px 70px 0px #29ABE20D;">
+          <label for="emailAddress" 
+                 style="font-weight:500; font-size:18px; line-height:150%; color:#000;">
+            البريد الإلكتروني
+          </label>
+          <input type="email" 
+                 id="emailAddress" 
+                 name="emailAddress" 
+                 placeholder="أدخل بريدك الإلكتروني" 
+                 required
+                 class="form-control border-0 mt-2"
+                 style="font-size:16px; background:transparent; text-align:right;">
+        </div>
+      </div>
+    </div>
+<!-- اختر مجال نشاطك -->
+<div class="mb-4">
+  <div style="background:#FFFFFF; border-radius:20px; padding:20px; 
+              box-shadow:-40px 100px 70px 0px #29ABE20D, 40px 0px 70px 0px #29ABE20D;">
+    <label class="d-block mb-3" 
+           style="font-weight:500; font-size:18px; line-height:150%; color:#000;">
+      اختر مجال نشاطك
+    </label>
+    <div class="row g-3">
+
+      <!-- مطعم -->
+      <div class="col-md-6 col-12">
+        <div class="form-check d-flex align-items-center">
+          <input class="form-check-input brand-radio" type="radio" id="restaurant" name="brand" value="مطعم">
+          <label class="form-check-label ms-2" for="restaurant">مطعم</label>
+        </div>
+      </div>
+
+      <!-- مقهى -->
+      <div class="col-md-6 col-12">
+        <div class="form-check d-flex align-items-center">
+          <input class="form-check-input brand-radio" type="radio" id="cafe" name="brand" value="مقهى">
+          <label class="form-check-label ms-2" for="cafe">مقهى</label>
+        </div>
+      </div>
+
+      <!-- علامات تجارية -->
+      <div class="col-md-6 col-12">
+        <div class="form-check d-flex align-items-center">
+          <input class="form-check-input brand-radio" type="radio" id="brands" name="brand" value="علامات تجارية">
+          <label class="form-check-label ms-2" for="brands">علامات تجارية</label>
+        </div>
+      </div>
+
+      <!-- أخرى -->
+      <div class="col-md-6 col-12">
+        <div class="form-check d-flex align-items-center">
+          <input class="form-check-input brand-radio" type="radio" id="others" name="brand" value="أخرى">
+          <label class="form-check-label ms-2" for="others">أخرى</label>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- الرسالة -->
+<div class="mb-4">
+  <div style="background:#FFFFFF; border-radius:20px; padding:20px; 
+              box-shadow:-40px 100px 70px 0px #29ABE20D, 40px 0px 70px 0px #29ABE20D;">
+    <label for="message" 
+           style="font-weight:500; font-size:18px; line-height:150%; color:#000;">
+      رسالتك
+    </label>
+    <textarea class="form-control border-0 mt-2" 
+              id="message" name="message" rows="5" 
+              placeholder="اكتب رسالتك هنا..." 
+              required
+              style="font-size:16px; background:transparent; text-align:right;"></textarea>
+  </div>
+</div>
+
+<style>.form-check {
+  display: flex;
+  align-items: center;
+  flex-direction: row; /* خليه عادي */
+}
+
+.form-check-input {
+  transform: scale(1.3);
+  margin: 0;
+  cursor: pointer;
+}
+
+.form-check-label {
+  font-size: 16px;
+  cursor: pointer;
+  padding-inline-start: 15px; /* دي اللي هتبعد النص عن الدايرة */
+}
+
+/* ✅ على الموبايل */
+@media (max-width: 576px) {
+  .form-check-label {
+    padding-inline-start: 19px; /* تزود المسافة شوية على الموبايل */
+    font-size: 15px;
+  }
+}
+
+</style>
+
+
+
+    <!-- زر الإرسال -->
+    <div class="text-center">
+      <button type="submit" 
+              class="submit-btn"
+              style="width:210px; height:68px; 
+                     background:#29ABE2; 
+                     border-radius:192px; 
+                     border:2px solid #FFFFFFCC; 
+                     box-shadow:0px 30px 50px 0px #29ABE226; 
+                     color:#FFFFFF; 
+                     font-family:Ubuntu, sans-serif; 
+                     font-weight:700; 
+                     font-size:18px; 
+                     line-height:100%; 
+                     text-align:center;">
+        إرسال الرسالة
+      </button>
+    </div>
+
+  </form>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- Footer -->
+<footer class="pt-4" style="background-color: #282c4b; color: white; direction: rtl; text-align: right;">
+  <div class="container">
+    <br>
+    <div class="row align-items-center">
+      <!-- يمين -->
+      <div class="col-md-6 mb-3 mb-md-0">
+        <h4 class="fw-bold mb-1">
+          <img src="Images/LogoMarkPNG.png" alt="اللوجو" style="width:40px; height:auto;">
+        </h4>
+        <p class="mb-0">نبتكر حلولًا تسويقية تتجاوز التوقعات.</p>
+      </div>
+
+      <!-- شمال -->
+      <div class="col-md-6 text-md-start">
+        <p class="mb-1">
+          <i class="bi bi-envelope-fill ms-2"></i>info@sabeq-sa.com
+        </p>
+        <p class="mb-0">
+          <i class="bi bi-telephone-fill ms-2"></i>0537993036
+        </p>
+      </div>
+    </div>
+
+    <!-- روابط + علم + سوشيال -->
+    <hr class="border-light">
+    <div class="row align-items-center text-center mb-3">
+      
+      <!-- علم -->
+      <div class="col-12 col-md-4 mb-2 mb-md-0 text-md-end">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/0/0d/Flag_of_Saudi_Arabia.svg" 
+             alt="علم السعودية" 
+             class="saudi-flag">
+      </div>
+
+      <!-- روابط -->
+      <div class="col-12 col-md-4 mb-2 mb-md-0">
+        <ul class="list-inline mb-0">
+          <li class="list-inline-item mx-2"><a href="homear.html" class="text-white text-decoration-none">الرئيسية</a></li>
+          <li class="list-inline-item mx-2"><a href="aboutusar.html" class="text-white text-decoration-none">من نحن</a></li>
+          <li class="list-inline-item mx-2"><a href="Contactusar.html" class="text-white text-decoration-none">تواصل معنا</a></li>
+        </ul>
+      </div>
+
+      <!-- سوشيال -->
+      <div class="col-12 col-md-4 text-md-start">
+        <a href="https://www.tiktok.com/@sabeq_official" target="_blank" class="social-frame ms-2">
+          <i class="bi bi-tiktok small-icon"></i>
+        </a>
+        <a href="https://www.instagram.com/sabeq_official" target="_blank" class="social-frame">
+          <i class="bi bi-instagram small-icon"></i>
+        </a>
+      </div>
+    </div>
+
+    <!-- حقوق النشر -->
+    <div class="text-center mt-3" style="font-size: 0.85rem; color: #ccc; padding-right: 30px;">
+  <p class="mb-1">© 2025 سابق. جميع الحقوق محفوظة.</p>
+  <p class="mb-1">الرقم الضريبي: 312811302900003</p>
+  <p class="mb-1">السجل التجاري: 7035659916 | تاريخ التسجيل: 04/08/2025</p>
+</div>
+
+  </div>
+  <br>
+</footer>
+
+<!-- CSS -->
+<style>
+  .small-icon {
+    font-size: 0.9rem; 
+    transition: transform 0.3s ease, color 0.3s ease;
+  }
+
+  .social-frame {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%; 
+    background-color: rgba(255, 255, 255, 0.08);
+    color: white;
+    text-decoration: none;
+    transition: background 0.3s ease, transform 0.3s ease;
+  }
+
+  .social-frame:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    transform: scale(1.1);
+  }
+
+  .saudi-flag {
+    width: 32px;
+    height: 32px;
+    object-fit: contain;
+    border-radius: 4px;
+    transition: transform 0.3s ease;
+  }
+
+  .saudi-flag:hover {
+    transform: scale(1.1);
+  }
+</style>
+
+<script src="bootstrap.bundle.min.js"></script>
+</body>
+</html>

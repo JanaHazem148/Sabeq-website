@@ -1,0 +1,1128 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <!-- روابط الاستايل -->
+  <link rel="stylesheet" href="bootstrap.min.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" />
+  <link rel="stylesheet" href="style.css" />
+
+  <title>من نحن - سابِق</title>
+  <meta name="description" content="تعرف أكثر على سابِق — رسالتنا، قيمنا، والتزامنا بتقديم حلول تسويقية تتجاوز التوقعات.">
+
+  <!-- أيقونة الموقع -->
+  <link rel="icon" href="Images/LogoMarkPNG.png" type="image/png" />
+
+  <!-- الخطوط -->
+  <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap&subset=arabic" rel="stylesheet">
+  
+  <style>
+    /* إضافة هذه الأنماط لقسم التواصل لمنع التداخل */
+    #contact {
+      position: relative;
+      z-index: 10;
+    }
+    
+    #contact .position-absolute {
+      z-index: 1;
+    }
+    
+    #contact .position-relative {
+      z-index: 2;
+    }
+    
+    /* ضبط المسافات */
+    #contact .container {
+      padding-top: 30px;
+      padding-bottom: 30px;
+    }
+    
+    /* التأكد من أن النص واضح */
+    .contact-title, .contact-desc, .label-text {
+      position: relative;
+      z-index: 3;
+    }
+    
+    /* تعديل حجم الصور إذا كانت كبيرة جداً */
+    #contact img {
+      max-height: 400px !important;
+    }
+  </style>
+</head>
+
+<body>
+
+<!-- شريط التنقل -->
+<nav class="navbar navbar-expand-lg bg-light navbar-light fixed-top">
+  <div class="container">
+
+    <!-- اللوجو -->
+    <a class="navbar-brand" href="homear.html">
+      <div style="display: flex; align-items: center; gap: 10px; flex-direction: row-reverse;">
+        <img src="Images/FullLogoPNG.png" alt="الشعار" style="width:150px; height:90px; object-fit:contain;">
+      </div>
+    </a>
+
+ 
+    <!-- زر الموبايل -->
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" 
+      data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" 
+      aria-expanded="false" aria-label="فتح القائمة">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!-- الروابط -->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mb-2 mb-lg-0 mx-auto text-center">
+        <li class="nav-item"><a class="nav-link active mx-3" href="homear.html"><b style="color:#007bff;">الرئيسية</b></a></li>
+        <li class="nav-item"><a class="nav-link mx-3" href="aboutusar.html">من نحن</a></li>
+        <li class="nav-item"><a class="nav-link mx-3" href="plansar.html">الباقات</a></li>
+        <li class="nav-item"><a class="nav-link mx-3" href="Contactusar.html">تواصل معنا</a></li>
+        <li class="nav-item"><a class="nav-link disabled mx-3">قريباً</a></li>
+        <!-- Dropdown لغة للموبايل -->
+               <li class="nav-item dropdown d-lg-none text-center mt-2">
+          <a class="lang-btn dropdown-toggle" href="#" id="mobileLang" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            اللغة
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="mobileLang">
+            <li><a class="dropdown-item lang-switch" href="aboutus.html">English</a></li>
+            <li><a class="dropdown-item lang-switch" href="aboutusar.html">العربية</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+
+    <!-- Dropdown لغة للديسكتوب -->
+    <div class="d-none d-lg-block dropdown ms-auto">
+      <a class="lang-btn dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+        العربية
+      </a>
+      <ul class="dropdown-menu dropdown-menu-end">
+        <li><a class="dropdown-item" href="aboutus.html">English</a></li>
+        <li><a class="dropdown-item" href="aboutusar.html">العربية</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<style>
+/* زر اللغة */
+.lang-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 90px;
+  height: 55px;
+  border: 1px solid #FAAF4380;
+  background: #FFFFFF;
+  border-radius: 80px;
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 100%;
+  color: #282C4B;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.lang-btn:hover,
+.lang-btn:focus {
+  background: #FAAF43;
+  color: #fff;
+}
+
+/* navbar */
+.navbar {
+  transition: all 0.3s ease;
+  padding: 20px 0;
+}
+
+.navbar.shrink {
+  padding: 5px 0;
+}
+
+.navbar img {
+  transition: all 0.3s ease;
+}
+
+.navbar.shrink img {
+  width: 100px !important;
+  height: 60px !important;
+  transition: all 0.3s ease;
+}
+
+/* تعديلات للهواتف المحمولة */
+@media (max-width: 991px) {
+  .navbar-collapse {
+    text-align: center;
+  }
+  
+  .navbar-nav {
+    width: 100%;
+    flex-direction: column;
+  }
+  
+  .nav-item {
+    margin: 8px 0;
+  }
+  
+  .nav-link {
+    font-size: 14px; /* حجم خط أصغر */
+    padding: 8px 0;
+    font-weight: 500;
+  }
+  
+  .dropdown-menu {
+    text-align: center;
+  }
+  
+  .dropdown-item {
+    font-size: 12حء; /* حجم خط أصغر للغة */
+  }
+}
+</style>
+
+<script>
+  window.addEventListener("scroll", function() {
+    let navbar = document.querySelector(".navbar");
+    if (window.scrollY > 50) {
+      navbar.classList.add("shrink");
+    } else {
+      navbar.classList.remove("shrink");
+    }
+  });
+</script>
+<section class="hero py-5" 
+         style="overflow:hidden; background: linear-gradient(to top, #F3E7D9 0%, #ffffff 100%); direction: rtl; text-align: right;">
+  <div class="container">
+    <div class="row align-items-center">
+
+      <!-- النص -->
+      <div class="col-lg-6 mb-4 mb-lg-0 text-end">
+        <!-- العنوان الرئيسي -->
+        <h2 class="about-title mb-3">
+          من نحن 
+        </h2>
+
+        <!-- الوصف -->
+        <p class="about-desc mb-4">
+           شركة سابِق للدعاية والإعلان، شركة سعودية متخصصة في إدارة الحملات الإعلانية عبر المؤثرين
+           <span class="highlight" style="color: #29ABE2;"> ترتكز على السرعة في التنفيذ، والدقة في التفاصيل، و الالتزام بنتائج ملموسة تُحقق أعلى جودة بأفضل تكلفة .
+           </span>
+        </p>
+        <p class="about-desc mb-4">
+          في <span style="color:#29ABE2;">سابق</span>، نثبت أن التميّز لا يتحقق بمجرد تصاميم أو حملات دعائية، بل بفهمٍ عميق للسوق، و استراتيجيات تُترجم الأهداف إلى إنجازات حقيقية..
+        </p>
+
+        <!-- الإحصائيات تحت الكلام -->
+        <div class="stats pe-4 mt-4">
+          <div class="text-end">
+            <h5 class="counter fw-bold mb-0" data-target="6">0</h5>
+            <small class="text-muted d-block" style="font-size:1.1rem; font-weight:500;">
+  اخر اشهر
+</small>
+
+          </div>
+
+          <div class="text-end">
+            <h5 class="counter fw-bold mb-0" data-target="60">0K</h5>
+            <small class="text-muted d-block" style="font-size:1.1rem; font-weight:500;">المشاريع</small>
+          </div>
+
+          <div class="text-end">
+            <h5 class="counter fw-bold mb-0" data-target="32">0</h5>
+            <small class="text-muted d-block " style="font-size:1.1rem; font-weight:500;">العملاء</small>
+          </div>
+        </div>
+      </div>
+
+      <!-- الصورة -->
+      <div class="col-lg-6 text-center">
+        <img src="Images/aboutus.png" 
+             class="img-fluid about-img" 
+             alt="صورة عن الشركة">
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CSS -->
+<style>
+  .best-platform {
+    font-family: 'Tajawal', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 100%;
+    letter-spacing: 0;
+    color: #FAAF43;
+    margin-bottom: 1rem;
+  }
+
+  .about-title {
+    font-family: 'Tajawal', sans-serif;
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 80px;
+    letter-spacing: 2%;
+    color: #1c1c1c;
+  }
+
+  .about-title .highlight {
+    color: #0d6efd;
+  }
+
+  .about-desc {
+    font-family: 'Tajawal', sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 36px;
+    letter-spacing: 0;
+    color: #747582;
+  }
+
+  .about-desc .highlight {
+    color: #007bff;
+  }
+
+  .counter {
+    font-family: 'Tajawal', sans-serif;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 100%;
+    letter-spacing: -2%;
+    text-transform: capitalize;
+    color: #092857;
+  }
+
+  .counter .plus {
+    color: #29ABE2;
+  }
+
+  .counter-label {
+    font-family: 'Tajawal', sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 100%;
+    letter-spacing: -2%;
+    text-transform: capitalize;
+    color: #092857;
+    margin-top: 5px;
+  }
+
+  /* الكاونتر */
+  .stats {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: flex-end;
+    text-align: right;
+  }
+
+  .stats div {
+    min-width: 100px;
+  }
+
+  .about-img {
+    width: 100%;      
+    max-width: 528px; 
+    height: auto;     
+    border-radius: 10px;
+    margin: auto;
+  }
+</style>
+
+<script>
+function startCounters() {
+  const counters = document.querySelectorAll(".counter");
+  const duration = 2000;
+  const startTime = performance.now();
+
+  const updateCounters = (now) => {
+    const elapsed = now - startTime;
+    const progress = Math.min(elapsed / duration, 1);
+
+    counters.forEach(counter => {
+      const target = +counter.getAttribute("data-target");
+      const suffix = counter.getAttribute("data-suffix") || "";
+      const value = Math.floor(progress * target);
+      counter.innerHTML = `<span class="plus">+</span>${value}${suffix}`;
+    });
+
+    if (progress < 1) {
+      requestAnimationFrame(updateCounters);
+    } else {
+      counters.forEach(counter => {
+        const target = +counter.getAttribute("data-target");
+        const suffix = counter.getAttribute("data-suffix") || "";
+        counter.innerHTML = `<span class="plus">+</span>${target}${suffix}`;
+      });
+    }
+  };
+
+  requestAnimationFrame(updateCounters);
+}
+
+const countersSection = document.querySelector(".stats");
+if (countersSection) {
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        startCounters();
+        observer.disconnect();
+      }
+    });
+  }, { threshold: 0.5 });
+
+  observer.observe(countersSection);
+}
+</script>
+
+
+<section class="py-5" style="background-color:#f8f9fa; direction: rtl; text-align: right;">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-lg-10">
+        <div class="card shadow-lg border-0 rounded-4 p-5 text-center">
+          <!-- أيقونة -->
+          <div class="mb-3">
+            <i class="bi bi-award-fill" style="font-size:2rem; color:#007bff;"></i>
+          </div>
+
+          <!-- العنوان -->
+          <h2 class="fw-bold mb-4" style="color:black;">
+            خدمة  تُبنى على الثقة، <span  style="color: #29ABE2;">وتُقاس بالنتائج.</span>
+          </h2>
+
+          <!-- النص -->
+          <p class="lead text-muted mb-0">النجاح لا يُقاس بالوعود..
+النجاح يُقاس بما يتحقق فعليًا على أرض الواقع؛ لذلك نركز على تفاصيل التنفيذ، و نعمل بروح الفريق لنمنح كل عميل تجربة مُميَّزة تُعزز حضوره في السوق، و تعكس أثر ملموس في أرقام المبيعات و التفاعل .
+
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="video-section" dir="rtl">
+  <div class="container">
+    <h2 class="section-title">
+   أمثلة واقعية عن كيفية مساعدتنا للعلامات التجارية في تحقيق أهدافها التسويقية
+    </h2>
+
+    <br><br>
+    <div class="slider">
+      <div class="slides">
+
+        <!-- فيديو 1 -->
+        <div class="reel card">
+          <a href="https://www.tiktok.com/@m..riyadh/video/7501298799671889159" target="_blank" class="video-thumb">
+            <img src="Images/video1.png" alt="فيديو تيك توك 1">
+            <span class="play-icon">▶</span>
+          </a>
+          <a href="https://www.tiktok.com/@m..riyadh/video/7501298799671889159" target="_blank" class="btn-tiktok">شاهد على تيك توك</a>
+        </div>
+
+        <!-- فيديو 2 -->
+        <div class="reel card">
+          <a href="https://www.tiktok.com/@bashaeir_18/video/7455011450407472402" target="_blank" class="video-thumb">
+            <img src="Images/video2.png" alt="فيديو تيك توك 2">
+            <span class="play-icon">▶</span>
+          </a>
+          <a href="https://www.tiktok.com/@bashaeir_18/video/7455011450407472402" target="_blank" class="btn-tiktok">شاهد على تيك توك</a>
+        </div>
+
+        <!-- فيديو 3 -->
+        <div class="reel card">
+          <a href="https://www.tiktok.com/@hx92x/video/7503886273300548882" target="_blank" class="video-thumb">
+            <img src="Images/video3.png" alt="فيديو تيك توك 3">
+            <span class="play-icon">▶</span>
+          </a>
+          <a href="https://www.tiktok.com/@hx92x/video/7503886273300548882" target="_blank" class="btn-tiktok">شاهد على تيك توك</a>
+        </div>
+
+        <!-- فيديو 4 -->
+        <div class="reel card">
+          <a href="https://www.tiktok.com/@ass.saudi/video/7458781143601646856" target="_blank" class="video-thumb">
+            <img src="Images/video4.png" alt="فيديو تيك توك 4">
+            <span class="play-icon">▶</span>
+          </a>
+          <a href="https://www.tiktok.com/@ass.saudi/video/7458781143601646856" target="_blank" class="btn-tiktok">شاهد على تيك توك</a>
+        </div>
+
+        <!-- فيديو 5 -->
+        <div class="reel card">
+          <a href="https://www.tiktok.com/@sara.saudihfood/video/7521785617936600328" target="_blank" class="video-thumb">
+            <img src="Images/video5.png" alt="فيديو تيك توك 5">
+            <span class="play-icon">▶</span>
+          </a>
+          <a href="https://www.tiktok.com/@sara.saudihfood/video/7521785617936600328" target="_blank" class="btn-tiktok">شاهد على تيك توك</a>
+        </div>
+
+        <!-- فيديو 6 -->
+        <div class="reel card">
+          <a href="https://www.tiktok.com/@arrosh.vlogger/video/7545574993682287892" target="_blank" class="video-thumb">
+            <img src="Images/video6.png" alt="فيديو تيك توك 6">
+            <span class="play-icon">▶</span>
+          </a>
+          <a href="https://www.tiktok.com/@arrosh.vlogger/video/7545574993682287892" target="_blank" class="btn-tiktok">شاهد على تيك توك</a>
+        </div>
+
+        <!-- فيديو 7 -->
+        <div class="reel card">
+          <a href="https://www.tiktok.com/@a7lam028/video/7501398832056454408" target="_blank" class="video-thumb">
+            <img src="Images/video7.png" alt="فيديو تيك توك 7">
+            <span class="play-icon">▶</span>
+          </a>
+          <a href="https://www.tiktok.com/@a7lam028/video/7501398832056454408" target="_blank" class="btn-tiktok">شاهد على تيك توك</a>
+        </div>
+
+        <!-- فيديو 8 -->
+        <div class="reel card">
+          <a href="https://www.tiktok.com/@lmoo199/video/7479107023209073927" target="_blank" class="video-thumb">
+            <img src="Images/video8.png" alt="فيديو تيك توك 8">
+            <span class="play-icon">▶</span>
+          </a>
+          <a href="https://www.tiktok.com/@lmoo199/video/7479107023209073927" target="_blank" class="btn-tiktok">شاهد على تيك توك</a>
+        </div>
+
+        <!-- فيديو 9 -->
+        <div class="reel card">
+          <a href="https://www.tiktok.com/@nasa2.28/video/7517407483955039496" target="_blank" class="video-thumb">
+            <img src="Images/video9.png" alt="فيديو تيك توك 9">
+            <span class="play-icon">▶</span>
+          </a>
+          <a href="https://www.tiktok.com/@nasa2.28/video/7517407483955039496" target="_blank" class="btn-tiktok">شاهد على تيك توك</a>
+        </div>
+
+        <!-- فيديو 10 -->
+        <div class="reel card">
+          <a href="https://www.tiktok.com/@juwlyna_99/video/7521737836207426834" target="_blank" class="video-thumb">
+            <img src="Images/video10.png" alt="فيديو تيك توك 10">
+            <span class="play-icon">▶</span>
+          </a>
+          <a href="https://www.tiktok.com/@juwlyna_99/video/7521737836207426834" target="_blank" class="btn-tiktok">شاهد على تيك توك</a>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+.video-section {
+  background: linear-gradient(135deg, #F3E7D9, #E3EEFF);
+  padding: 60px 20px;
+  text-align: center;
+  direction: rtl; /* للغة العربية */
+}
+
+.section-title {
+  background: linear-gradient(90deg, #007bff, #FAAF43);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.slider {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+.slides {
+  display: flex;
+  width: max-content;
+  animation: slide 60s linear infinite;
+  gap: 30px;
+  flex-direction: row-reverse; /* يجعل الصور على اليمين */
+}
+
+.slides:hover {
+  animation-play-state: paused;
+}
+
+.card {
+  background: #fff;
+  border-radius: 20px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.video-thumb {
+  position: relative;
+  display: block;
+  width: 250px;
+  height: 444px;
+  border-radius: 16px;
+  overflow: hidden;
+}
+
+.video-thumb img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.play-icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 48px;
+  color: white;
+  text-shadow: 0 0 10px rgba(0,0,0,0.7);
+  pointer-events: none;
+}
+
+.btn-tiktok {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 8px 14px;
+  background: linear-gradient(90deg, #ff0050, #00f2ea);
+  color: white;
+  font-size: 14px;
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 8px;
+  transition: 0.3s ease;
+}
+
+.btn-tiktok:hover {
+  transform: scale(1.05);
+  opacity: 0.9;
+}
+
+@media (max-width: 991px) {
+  .slider {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    scroll-snap-type: x mandatory;
+    scrollbar-width: none;
+  }
+
+  .slider::-webkit-scrollbar {
+    display: none;
+  }
+
+  .slides {
+    animation: none;
+    gap: 20px;
+    flex-direction: row-reverse; /* عشان العربي */
+  }
+
+  .card {
+    flex: 0 0 auto;
+    scroll-snap-align: center;
+  }
+}
+
+@keyframes slide {
+  from { transform: translateX(0); }
+  to { transform: translateX(50%); } /* عكس الاتجاه */
+}
+</style>
+<section class="py-5" dir="rtl">
+  <div class="container">
+    <div class="row align-items-start">
+      
+      <!-- العنوان والنص -->
+      <div class="col-lg-4 col-md-12 mb-4 mb-lg-0">
+        <div class="faq-left-box">
+          <h2 class="faq-title">الأسئلة الشائعة (FAQs)</h2>
+          <p class="faq-subtitle">
+            بصفتنا وكالة رائدة في التسويق الرقمي، نحرص على توفير موارد تعليمية شاملة 
+            والإجابة على الأسئلة الأكثر شيوعًا لمساعدة عملائنا.
+          </p>
+        </div>
+      </div>
+
+      <!-- الأسئلة -->
+      <div class="col-lg-8 col-md-12">
+        <div class="faq-box">
+          
+          <!-- Q1 -->
+          <div class="faq-item">
+            <button class="faq-question">
+              متى تبدأ نتائج الحملة في الظهور بعد الإطلاق؟
+            </button>
+            <div class="faq-answer">
+              عادةً ما تبدأ النتائج في الظهور بعد الأسبوع الأول.
+            </div>
+          </div>
+
+          <!-- Q2 -->
+          <div class="faq-item">
+            <button class="faq-question">
+              هل تتم مشاركة قائمة البلوقرز مع العميل قبل الحملة؟
+            </button>
+            <div class="faq-answer">
+              بالنسبة لبلوقرز الضيافة أو من يتم دفع 300 ريال لهم، تتم مشاركة رموز الدعوة فقط 
+              لحضور النشاط. <br><br>
+              أما البلوقرز الذين يتقاضون 1000 ريال أو أكثر، تتم مشاركة بياناتهم 
+              مع العميل بعد توقيع الاتفاقية الرسمية.
+            </div>
+          </div>
+
+          <!-- Q3 -->
+          <div class="faq-item">
+            <button class="faq-question">
+              ما هي آلية اختيار البلوقر المناسب لكل حملة؟
+            </button>
+            <div class="faq-answer">
+              يتم اختيار البلوقرز بناءً على مدى ملاءمتهم للجمهور المستهدف، 
+              وطبيعة النشاط، ومستوى التفاعل، وجودة المحتوى الذي يقدمونه.
+            </div>
+          </div>
+
+          <!-- Q4 -->
+          <div class="faq-item">
+            <button class="faq-question">
+              ما الذي يميز سابِق عن غيرها من الوكالات؟
+            </button>
+            <div class="faq-answer">
+              سرعة التنفيذ، الاهتمام بالتفاصيل، تقديم أعلى جودة بأفضل تكلفة، 
+              وخبرة مثبتة من خلال مشاريع ناجحة.
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CSS -->
+<style>
+  /* البوكس اللي فيه العنوان والنص */
+  .faq-left-box {
+    max-width: 531px;
+    min-height: 150px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px; /* مسافة بين العنوان والجملة */
+    text-align: right;
+  }
+
+@media (min-width: 992px) {
+    .faq-left-box {
+      margin-left: 40px; /* في العربي المسافة تبقى شمال */
+      margin-right: 0;
+    }
+  }
+
+  .faq-title {
+    font-family: Ubuntu, sans-serif;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 130%;
+    letter-spacing: -3%;
+    color: #010205;
+    text-align: right;
+  }
+
+  .faq-subtitle {
+    font-family: Ubuntu, sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 180%;
+    letter-spacing: 0;
+    color: #878C91;
+    text-align: right;
+  }
+
+  .faq-box {
+    border-top: 1px solid #ddd;
+  }
+
+  .faq-item {
+    border-bottom: 1px solid #ddd;
+  }
+
+  .faq-question {
+    width: 100%;
+    text-align: right;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-family: Ubuntu, sans-serif;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 150%;
+    letter-spacing: -3%;
+    color: #010205;
+    padding: 20px 0;
+    position: relative;
+    cursor: pointer;
+  }
+
+  /* علامة + و - */
+  .faq-question::after {
+    content: '+';
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #000;
+    position: absolute;
+    left: 0; /* بدل right تبقى left في العربي */
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  .faq-question.active::after {
+    content: '-';
+  }
+
+  .faq-answer {
+    font-family: Ubuntu, sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 180%;
+    color: #878C91;
+    padding: 0 0 20px;
+    display: none;
+    text-align: right;
+  }
+
+  .faq-answer.show {
+    display: block;
+  }
+  
+</style>
+
+<!-- JavaScript -->
+<script>
+  const questions = document.querySelectorAll(".faq-question");
+
+  questions.forEach(q => {
+    q.addEventListener("click", () => {
+      const isActive = q.classList.contains("active");
+
+      // قفل كل البوكسات
+      questions.forEach(item => {
+        item.classList.remove("active");
+        item.nextElementSibling.classList.remove("show");
+      });
+
+      // لو مش مفتوح افتحه، لو مفتوح يفضل مقفول
+      if (!isActive) {
+        q.classList.add("active");
+        q.nextElementSibling.classList.add("show");
+      }
+    });
+  });
+</script>
+<div class="container mt-5" id="contact">
+  <div class="row align-items-center">
+    
+    <!-- الصورة على اليمين -->
+    <div class="col-md-5 text-center mb-4 mb-md-0 position-relative order-md-2">
+      <img src="Images/Group9146.png" 
+           alt="شكل خلفي" 
+           class="img-fluid position-absolute top-50 start-50 translate-middle" 
+           style="max-height: 500px; z-index: 1; opacity: 0.9;">
+      <img src="Images/Marketing.png" 
+           class="img-fluid position-relative" 
+           alt="صورة للتواصل معنا" 
+           style="max-height: 420px; z-index: 2;">
+    </div>
+
+    <!-- الفورم على الشمال -->
+    <div class="col-md-7 order-md-1">
+      
+      <!-- النص البرتقالي الصغير -->
+      <p class="contact-small">
+        تواصل معنا
+      </p>
+      <br>
+      
+  <!-- العنوان الرئيسي -->
+      <h2 class="contact-title">
+         هيا بنا لنتعاون الان!
+      </h2>
+      
+      <!-- وصف -->
+      <p class="contact-desc mb-4">
+  دعنا نكون شركائك في بناء حضور مؤثر لعلامتك التجارية .
+</p>
+
+      <form action="https://formspree.io/f/xkgvqbow" method="POST">
+
+        <!-- الاسم الكامل -->
+        <div class="mb-3">
+          <label for="fullName" class="form-label label-text">الاسم الكامل</label>
+          <input type="text" class="form-control input-long" id="fullName" name="fullName" placeholder="ادخل اسمك" required>
+        </div>
+        
+        <!-- الايميل + التاريخ -->
+        <div class="row g-3">
+          <div class="col-md-6">
+            <label for="emailAddress" class="form-label label-text">البريد الإلكتروني</label>
+            <input type="email" class="form-control input-half" id="emailAddress" name="emailAddress" placeholder="ادخل بريدك" required>
+          </div>
+
+          <div class="col-md-6">
+            <label for="date" class="form-label label-text">التاريخ</label>
+            <div class="position-relative">
+              <input type="date" class="form-control input-half ps-5 custom-date" id="date" name="date">
+              <span class="position-absolute top-50 start-0 translate-middle-y ps-2" style="cursor: pointer;" onclick="document.getElementById('date').showPicker()">
+                <img src="Images/Calendar.png" alt="تقويم" style="width:20px; height:20px;">
+              </span>
+            </div>
+          </div>
+        </div>
+
+        <!-- البراند -->
+        <div class="mb-3">
+          <label for="brandName" class="form-label label-text"> البراند الخاص بك</label>
+          <input type="text" class="form-control input-long" id="brandName" name="brandName" placeholder="ادخل اسم البراند">
+        </div>
+        
+        <!-- الرسالة -->
+        <div class="mb-3">
+          <label for="message" class="form-label label-text">الرسالة</label>
+          <textarea class="form-control input-long ps-3" id="message" name="message" rows="4" placeholder="اكتب رسالتك هنا" required></textarea>
+        </div>
+        
+        <!-- الزرار -->
+        <div class="text-center">
+          <button type="submit" class="btn submit-btn">
+            <span class="btn-text">إرسال الرسالة</span>
+          </button>
+        </div>
+
+      </form>
+    </div>
+  </div>
+</div>
+
+<br><br>
+<hr>
+
+<!-- CSS -->
+<style>
+  /* النص البرتقالي الصغير */
+  .contact-small {
+    font-family: Ubuntu, sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    color: #FAAF43;
+    text-transform: uppercase;
+  }
+
+  /* العنوان الرئيسي */
+  .contact-title {
+    font-family: Ubuntu, sans-serif;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 53px;
+    letter-spacing: 2%;
+    color: #282C4B;
+  }
+
+  /* الوصف */
+  .contact-desc {
+    font-family: Ubuntu, sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 28px;
+    color: #14142B;
+  }
+
+  /* اللابلز */
+  .label-text {
+    font-family: Ubuntu, sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 32px;
+    color: #14183E;
+  }
+
+  /* البوكسات */
+  .input-long,
+  .input-half {
+    width: 100%;
+    height: 58px;
+    background-color: #29ABE20D;
+    border: none;
+    border-radius: 10px;
+    font-family: Ubuntu, sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 100%;
+    color: #747582;
+    padding-left: 15px;
+    box-sizing: border-box;
+  }
+
+  .input-long::placeholder,
+  .input-half::placeholder {
+    font-family: Ubuntu, sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 100%;
+    color: #747582;
+    opacity: 1;
+  }
+
+  textarea.input-long {
+    height: auto;
+    padding-top: 10px;
+  }
+
+  /* شيل أيقونة الـ default من input date */
+  input[type="date"]::-webkit-calendar-picker-indicator {
+    opacity: 0;
+    cursor: pointer;
+  }
+
+  /* زرار */
+  .submit-btn {
+    width: 210px;
+    height: 68px;
+    border-radius: 192px;
+    background: #29ABE2;
+    border: 2px solid #FFFFFFCC;
+    box-shadow: 0px 30px 50px 0px #29ABE226;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+    margin: 0 auto;
+  }
+
+  .submit-btn:hover {
+    background: #1f94c7;
+  }
+
+  .btn-text {
+    width: 127px;
+    height: 21px;
+    font-family: Ubuntu, sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 100%;
+    letter-spacing: 2%;
+    color: #FFFFFF;
+    text-align: center;
+  }
+</style>
+<!-- Footer -->
+<footer class="pt-4" style="background-color: #282c4b; color: white; direction: rtl; text-align: right;">
+  <div class="container">
+    <br>
+    <div class="row align-items-center">
+      <!-- يمين -->
+      <div class="col-md-6 mb-3 mb-md-0">
+        <h4 class="fw-bold mb-1">
+          <img src="Images/LogoMarkPNG.png" alt="اللوجو" style="width:40px; height:auto;">
+        </h4>
+        <p class="mb-0">نبتكر حلولًا تسويقية تتجاوز التوقعات.</p>
+      </div>
+
+      <!-- شمال -->
+      <div class="col-md-6 text-md-start">
+        <p class="mb-1">
+          <i class="bi bi-envelope-fill ms-2"></i>info@sabeq-sa.com
+        </p>
+        <p class="mb-0">
+          <i class="bi bi-telephone-fill ms-2"></i>0537993036
+        </p>
+      </div>
+    </div>
+
+    <!-- روابط + علم + سوشيال -->
+    <hr class="border-light">
+    <div class="row align-items-center text-center mb-3">
+      
+      <!-- علم -->
+      <div class="col-12 col-md-4 mb-2 mb-md-0 text-md-end">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/0/0d/Flag_of_Saudi_Arabia.svg" 
+             alt="علم السعودية" 
+             class="saudi-flag">
+      </div>
+
+      <!-- روابط -->
+      <div class="col-12 col-md-4 mb-2 mb-md-0">
+        <ul class="list-inline mb-0">
+          <li class="list-inline-item mx-2"><a href="homear.html" class="text-white text-decoration-none">الرئيسية</a></li>
+          <li class="list-inline-item mx-2"><a href="aboutusar.html" class="text-white text-decoration-none">من نحن</a></li>
+          <li class="list-inline-item mx-2"><a href="Contactusar.html" class="text-white text-decoration-none">تواصل معنا</a></li>
+        </ul>
+      </div>
+
+      <!-- سوشيال -->
+      <div class="col-12 col-md-4 text-md-start">
+        <a href="https://www.tiktok.com/@sabeq_official" target="_blank" class="social-frame ms-2">
+          <i class="bi bi-tiktok small-icon"></i>
+        </a>
+        <a href="https://www.instagram.com/sabeq_official" target="_blank" class="social-frame">
+          <i class="bi bi-instagram small-icon"></i>
+        </a>
+      </div>
+    </div>
+
+    <!-- حقوق النشر -->
+    <div class="text-center mt-3" style="font-size: 0.85rem; color: #ccc; padding-right: 30px;">
+  <p class="mb-1">© 2025 سابق. جميع الحقوق محفوظة.</p>
+  <p class="mb-1">الرقم الضريبي: 312811302900003</p>
+  <p class="mb-1">السجل التجاري: 7035659916 | تاريخ التسجيل: 04/08/2025</p>
+</div>
+
+  </div>
+  <br>
+</footer>
+
+<!-- CSS -->
+<style>
+  .small-icon {
+    font-size: 0.9rem; 
+    transition: transform 0.3s ease, color 0.3s ease;
+  }
+
+  .social-frame {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%; 
+    background-color: rgba(255, 255, 255, 0.08);
+    color: white;
+    text-decoration: none;
+    transition: background 0.3s ease, transform 0.3s ease;
+  }
+
+  .social-frame:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    transform: scale(1.1);
+  }
+
+  .saudi-flag {
+    width: 32px;
+    height: 32px;
+    object-fit: contain;
+    border-radius: 4px;
+    transition: transform 0.3s ease;
+  }
+
+  .saudi-flag:hover {
+    transform: scale(1.1);
+  }
+</style>
+
+<script src="bootstrap.bundle.min.js"></script>
+</body>
+</html>
